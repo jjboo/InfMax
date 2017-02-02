@@ -1,1 +1,2 @@
-# InfMax2017
+# InfMax
+Stay tuned
