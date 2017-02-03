@@ -25,7 +25,7 @@ public class Config {
   public String graphFile;
   public int numSeeds;
   public int mcRuns;
-  public PropagationModel propagationModel = PropagationModel.IC;
+  public PropagationModel propagationModel;
   public Algorithm algorithm;
   public String outputDir;
   public int startIter;
@@ -46,6 +46,7 @@ public class Config {
     setAlgorithm(prop.getProperty("algo", "celf"));
     outputDir = prop.getProperty("outputDir");
     startIter = Integer.parseInt(prop.getProperty("startIter"));
+    setPropagationModel(prop.getProperty("model"));
 
     if (mcRuns <= 0 || startIter <= 0) {
       throw new RuntimeException("Values for mcRuns and startIter must be positive");
@@ -64,6 +65,16 @@ public class Config {
       algorithm = Algorithm.CELFPP;
     } else {
       throw new RuntimeException("Algorithm not supported. " + algo);
+    }
+  }
+
+  private void setPropagationModel(String model) {
+    if (model.toLowerCase().equals("IC")) {
+      propagationModel = PropagationModel.IC;
+    } else if (model.toLowerCase().equals("LT")) {
+      propagationModel = PropagationModel.LT;
+    } else {
+      throw new RuntimeException("Propgation model not supported. " + model);
     }
   }
 
