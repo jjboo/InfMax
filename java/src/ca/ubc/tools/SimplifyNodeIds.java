@@ -120,8 +120,8 @@ public class SimplifyNodeIds {
 
   public static void main(String[] args) {
     SimplifyNodeIds s = new SimplifyNodeIds();
-    s.readInputFile("test_graph.txt");
-    s.writeOutputGraphFile("test_graph_simplified.txt");
+    s.readInputFile("sample_datasets/test_graph.txt");
+    s.writeOutputGraphFile("sample_datasets/test_graph_simplified.txt");
   }
 
 }
