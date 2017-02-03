@@ -23,6 +23,8 @@ public class CelfAlgo {
   private Config _config;
   private Set<Integer> _seedSet;
 
+  private static final int INITIAL_FLAG = 0;
+
   /**
    * Constructor
    */
@@ -42,8 +44,9 @@ public class CelfAlgo {
     _seedSet.clear();
 
     // first iteration
-    for (int i = 0; i < _graph.n; ++i) {
-      _covQueue.add(new CelfNode(i, IndependentCascade.estimateSpread(_graph, _config, _seedSet, i), 0));
+    for (int nodeId = 0; nodeId < _graph.n; ++nodeId) {
+      _covQueue.add(new CelfNode(nodeId, IndependentCascade.estimateSpread(_graph, _config, _seedSet, nodeId),
+          INITIAL_FLAG));
     }
 
     // get the first seed

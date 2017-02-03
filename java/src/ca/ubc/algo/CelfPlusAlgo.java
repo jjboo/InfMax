@@ -1,6 +1,8 @@
 package ca.ubc.algo;
 
+import ca.ubc.model.IndependentCascade;
 import ca.ubc.util.CelfNode;
+import ca.ubc.util.CelfPlusNode;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
 import java.util.HashSet;
@@ -20,6 +22,9 @@ public class CelfPlusAlgo {
   private Config _config;
   private Set<Integer> _seedSet;
 
+  private static final double INITIAL_MG = 0.0;
+  private static final int INITIAL_FLAG = 0;
+
   /**
    * constructor
    */
@@ -34,10 +39,15 @@ public class CelfPlusAlgo {
    * Mine seeds
    */
   public double run() {
+    double totalSpread = 0;
+    _seedSet.clear();
 
-    // TODO this is placeholder
+    // first iteration
+    for (int nodeId = 0; nodeId < _graph.n; ++nodeId) {
+      CelfPlusNode node = new CelfPlusNode(nodeId, INITIAL_MG, INITIAL_MG, INITIAL_FLAG, -1);
+    }
 
-    return 0;
+    return totalSpread;
   }
 
 }
