@@ -12,6 +12,7 @@ public class Main {
 
   public static void main(String[] args) throws IOException {
 
+    // TODO: fileName should come from command line argument
     String fileName = "./java/properties/config.properties";
     Config config = new Config(fileName);
 
@@ -23,6 +24,7 @@ public class Main {
    * Run an influence maximization algorithm
    */
   private static void run(Config config) {
+    Graph G = new Graph(config.graphFile);
     if (config.algorithm == Algorithm.CELF) {
       // CELF
       LOGGER.info("Running CELF");

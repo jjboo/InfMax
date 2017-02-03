@@ -5,6 +5,10 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.logging.Logger;
 
+/**
+ * Config class saves all config paramters.
+ * TODO: Ideally, all attributes of this class should be final, unless we want to override them in a subclass.
+ */
 public class Config {
   private static final Logger LOGGER = Logger.getLogger(Main.class.getCanonicalName());
 
