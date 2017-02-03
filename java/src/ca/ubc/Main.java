@@ -24,11 +24,12 @@ public class Main {
    * Run an influence maximization algorithm
    */
   private static void run(Config config) {
-    Graph G = new Graph(config.graphFile);
+    Graph graph = new Graph(config.graphFile);
     if (config.algorithm == Algorithm.CELF) {
       // CELF
       LOGGER.info("Running CELF");
-      // TODO call CELF running code
+      Celf celf = new Celf(graph, config);
+      celf.run();
     } else if (config.algorithm == Algorithm.CELFPP) {
       // CELF++
       LOGGER.info("Running CELF++");

@@ -15,7 +15,7 @@ public class Config {
   String graphFile;
   public int numSeeds;
   public int mcRuns;
-  public PropagationModel propagationModelModel;
+  public PropagationModel propagationModel = PropagationModel.IC;
   public Algorithm algorithm;
   public String outputDir;
 
@@ -30,16 +30,19 @@ public class Config {
 
     // get the property values
     graphFile = prop.getProperty("graphFile");
-    mcRuns = Integer.parseInt(prop.getProperty("mcRuns"));
-    setAlgorithm(prop.getProperty("algo"));
-
+    mcRuns = Integer.parseInt(prop.getProperty("mcRuns", "10000"));
+    numSeeds = Integer.parseInt(prop.getProperty("numSeeds", "50"));
+    setAlgorithm(prop.getProperty("algo", "celf"));
     outputDir = prop.getProperty("outputDir");
-    print();
 
     if (mcRuns <= 0) {
       throw new RuntimeException("mcRuns must be positive");
     }
+    if (graphFile == null || outputDir == null) {
+      throw new RuntimeException("input and output path cannot be null");
+    }
 
+    print();
   }
 
   private void setAlgorithm(String algo) {
@@ -48,7 +51,7 @@ public class Config {
     } else if (algo.toLowerCase().equals("celfpp")) {
       algorithm = Algorithm.CELFPP;
     } else {
-      System.out.println("Algorithm not supported. " + algo);
+      throw new RuntimeException("Algorithm not supported. " + algo);
     }
   }
 
