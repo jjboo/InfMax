@@ -70,7 +70,9 @@ public class Graph {
       e.printStackTrace();
     } finally {
       try {
-        br.close();
+        if (br != null) {
+          br.close();
+        }
       } catch (IOException e) {
         e.printStackTrace();
       }
@@ -84,6 +86,11 @@ public class Graph {
    * Print the neighbors of u and out-degree of u in the graph
    */
   public void print(int u) {
+
+    if (u >= n) {
+      throw new RuntimeException("Node index out of bounds!");
+    }
+
     System.out.println("Printing stats for node " + u);
     List<Integer> f = neighbors[u];
     List<Double> p = probs[u];

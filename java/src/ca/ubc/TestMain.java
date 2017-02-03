@@ -5,7 +5,7 @@ package ca.ubc;
  */
 public class TestMain {
   public static void main(String[] args){
-    Graph graph = new Graph("/Users/wlu/IdeaProjects/InfMax2017/java/graph/hep_WC.inf.0");
+    Graph graph = new Graph("./java/graph/sample0.txt");
     graph.print(0);
     graph.print(1);
     graph.print(15232);
