@@ -1,5 +1,8 @@
 package ca.ubc;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
 import java.util.logging.Logger;
 
 public class Config {
@@ -12,7 +15,30 @@ public class Config {
   public Algorithm algorithm;
   public String outputDir;
 
-  public void setAlgorithm(String algo) {
+  public Config(String fileName) {
+    Properties prop = new Properties();
+    try {
+      InputStream input = new FileInputStream(fileName);
+      prop.load(input); // load a properties file
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+
+    // get the property values
+    graphFile = prop.getProperty("graphFile");
+    mcRuns = Integer.parseInt(prop.getProperty("mcRuns"));
+    setAlgorithm(prop.getProperty("algo"));
+
+    outputDir = prop.getProperty("outputDir");
+    print();
+
+    if (mcRuns <= 0) {
+      throw new RuntimeException("mcRuns must be positive");
+    }
+
+  }
+
+  private void setAlgorithm(String algo) {
     if (algo.toLowerCase().equals("celf")) {
       algorithm = Algorithm.CELF;
     } else if (algo.toLowerCase().equals("celfpp")) {

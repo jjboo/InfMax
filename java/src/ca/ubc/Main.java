@@ -1,11 +1,7 @@
 package ca.ubc;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
 import java.util.logging.Logger;
-
 
 /**
  * Main class
@@ -16,22 +12,8 @@ public class Main {
 
   public static void main(String[] args) throws IOException {
 
-    Properties prop = new Properties();
-    Config config = new Config();
-    InputStream input = new FileInputStream("./java/properties/config.properties");
-    prop.load(input); // load a properties file
-
-    // get the property values
-    config.graphFile = prop.getProperty("graphFile");
-    config.mcRuns = Integer.parseInt(prop.getProperty("mcRuns"));
-    config.setAlgorithm(prop.getProperty("algo"));
-
-    config.outputDir = prop.getProperty("outputDir");
-    config.print();
-
-    if (config.mcRuns <= 0) {
-      throw new RuntimeException("mcRuns must be positive");
-    }
+    String fileName = "./java/properties/config.properties";
+    Config config = new Config(fileName);
 
     // TODO code that measures running time
     run(config);
