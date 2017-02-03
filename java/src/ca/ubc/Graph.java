@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Logger;
 
 
@@ -18,8 +19,8 @@ public class Graph {
 
   // TODO we should make those fields private
   public int n;  // num of nodes
-  public ArrayList<Integer>[] neighbors;
-  public ArrayList<Double>[] probs;
+  public List<Integer>[] neighbors;
+  public List<Double>[] probs;
   public int[] outDegrees;
 
   @SuppressWarnings("unchecked")
@@ -84,8 +85,8 @@ public class Graph {
    */
   public void print(int u) {
     System.out.println("Printing stats for node " + u);
-    ArrayList<Integer> f = neighbors[u];
-    ArrayList<Double> p = probs[u];
+    List<Integer> f = neighbors[u];
+    List<Double> p = probs[u];
     for (int i = 0; i < f.size(); ++i) {
       StringBuilder sb = new StringBuilder();
       sb.append('(');
@@ -99,6 +100,4 @@ public class Graph {
     }
     System.out.println("Out-degree of node " +  u + " = " + outDegrees[u]);
   }
-
-
 }
