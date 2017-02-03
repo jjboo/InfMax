@@ -22,6 +22,7 @@ public class CelfAlgo {
   private Graph _graph;
   private Config _config;
   private Set<Integer> _seedSet;
+  private long startTime;
 
   /**
    * Constructor
@@ -38,6 +39,8 @@ public class CelfAlgo {
    * @return total spread of the chosen seed set
    */
   public double run() {
+    startTime = System.currentTimeMillis();
+
     double totalSpread = 0;
     _seedSet.clear();
 
@@ -50,7 +53,7 @@ public class CelfAlgo {
     CelfNode topNode = _covQueue.poll();
     _seedSet.add(topNode.id);
     totalSpread += topNode.mg;
-    InfMaxUtils.logSeed(_seedSet.size(), topNode.id, topNode.mg, totalSpread, LOGGER);
+    InfMaxUtils.logSeed(_seedSet.size(), topNode.id, topNode.mg, totalSpread, LOGGER, InfMaxUtils.runningTimeMin(startTime));
 
     // get seeds no. 2 to k
     while (_seedSet.size() < _config.numSeeds) {
@@ -62,7 +65,7 @@ public class CelfAlgo {
         // add this node as seed
         _seedSet.add(bestNode.id);
         totalSpread += bestNode.mg;
-        InfMaxUtils.logSeed(_seedSet.size(), bestNode.id, bestNode.mg, totalSpread, LOGGER);
+        InfMaxUtils.logSeed(_seedSet.size(), bestNode.id, bestNode.mg, totalSpread, LOGGER, InfMaxUtils.runningTimeMin(startTime));
         _covQueue.poll();
 
       } else {

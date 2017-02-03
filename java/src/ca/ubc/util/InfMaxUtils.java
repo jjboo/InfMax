@@ -14,7 +14,7 @@ public class InfMaxUtils {
    * log seed selection
    * Format of printing: seedCount \t seedNodeId \t MG \t totalSpread
    */
-  public static void logSeed(int cnt, int id, double mg, double totalSpread, Logger logger) {
+  public static void logSeed(int cnt, int id, double mg, double totalSpread, Logger logger, double timeSpentInMin) {
     StringBuilder sb = new StringBuilder();
     sb.append(cnt);
     sb.append(TAB);
@@ -23,6 +23,15 @@ public class InfMaxUtils {
     sb.append(mg);
     sb.append(TAB);
     sb.append(totalSpread);
+    sb.append(TAB);
+    sb.append(timeSpentInMin);
     logger.info(sb.toString());
+  }
+
+  // running time in minutes
+  public static double runningTimeMin(long startTime) {
+    long curTime = System.currentTimeMillis();
+    double durationInMin = (double)(curTime - startTime) / (1000.0 * 60.0);
+    return durationInMin;
   }
 }
