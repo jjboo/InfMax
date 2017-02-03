@@ -22,6 +22,6 @@ public class Celf {
   }
 
   double ICCov(Set<Long> seeds) {
-    
+    return 0;
   }
 }
