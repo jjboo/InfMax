@@ -21,7 +21,6 @@ public class Graph {
   public int n;  // num of nodes
   public List<Integer>[] neighbors;
   public List<Double>[] probs;
-  public int[] outDegrees;
 
   @SuppressWarnings("unchecked")
   public Graph(String graphFilePath) {
@@ -41,7 +40,6 @@ public class Graph {
           // first line tells num of nodes and edges
           isFirstLine = false;
           n = Integer.parseInt(data[0]);
-          //m = Integer.parseInt(data[1]);
           LOGGER.info("Number of nodes = " + n);
 
           neighbors = (ArrayList<Integer>[]) new ArrayList[n];
@@ -51,9 +49,6 @@ public class Graph {
             probs[i] = new ArrayList<>();
           }
 
-          outDegrees = new int[n];
-          Arrays.fill(outDegrees, 0);
-
         } else {
           // each line contains one directed edge: (u, v, p_uv)
           int u = Integer.parseInt(data[0]);
@@ -62,7 +57,6 @@ public class Graph {
 
           neighbors[u].add(v);
           probs[u].add(p);
-          outDegrees[u]++;
           numEdges++;
         }
       }
@@ -105,6 +99,5 @@ public class Graph {
       sb.append(" )");
       System.out.println(sb.toString());
     }
-    System.out.println("Out-degree of node " +  u + " = " + outDegrees[u]);
   }
 }
