@@ -57,6 +57,9 @@ public class CelfPlusAlgo {
       CelfPlusNode node = new CelfPlusNode(nodeId, INITIAL_MG, INITIAL_MG, INITIAL_FLAG, curBestId);
       node.mg = IndependentCascade.estimateSpread(_graph, _config, _seedSet, node.id);
       _covQueue.add(node);
+      if (nodeId % 1000 == 0) {
+        LOGGER.info(node.id + "\t" + String.format("%.5f", node.mg));
+      }
       lookUps++;
     }
 

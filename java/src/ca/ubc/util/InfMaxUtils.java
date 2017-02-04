@@ -19,13 +19,12 @@ public class InfMaxUtils {
   public static void logSeed(Logger logger, int cnt, int id, double mg, double totalSpread,
                              int lookUps, int celfPlusSave, double timeSpentInMin) {
     StringBuilder sb = new StringBuilder();
-    sb.append(cnt).append(TAB).
-            append(id).append(TAB)
-            .append(mg).append(TAB)
-            .append(totalSpread).append(TAB)
+    sb.append(cnt).append(TAB).append(id).append(TAB)
+            .append(String.format("%.5f", mg)).append(TAB)
+            .append(String.format("%.5f", totalSpread)).append(TAB)
             .append(lookUps).append(TAB)
             .append(celfPlusSave).append(TAB)
-            .append(timeSpentInMin);
+            .append(String.format("%.5f", timeSpentInMin));
     logger.info(sb.toString());
   }
 

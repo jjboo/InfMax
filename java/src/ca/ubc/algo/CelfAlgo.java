@@ -52,7 +52,7 @@ public class CelfAlgo {
       CelfNode node = new CelfNode(nodeId, IndependentCascade.estimateSpread(_graph, _config, _seedSet, nodeId), INITIAL_FLAG);
       _covQueue.add(node);
       if (nodeId % 1000 == 0) {
-        LOGGER.info(node.id + ", " + node.mg);
+        LOGGER.info(node.id + "\t" + String.format("%.5f", node.mg));
       }
       lookUps++;
     }
