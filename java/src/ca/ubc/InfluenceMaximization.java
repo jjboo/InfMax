@@ -20,10 +20,9 @@ public class InfluenceMaximization {
   private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
 
   public static void main(String[] args) throws IOException {
-    Config config = new Config("./java/properties/config.properties");
+    Config config = new Config(args[0]);
     InfMaxUtils.setLogFile(LOGGER, config);
     run(config);
-    //testRun(config);
     LOGGER.info("Program completed");
   }
 
