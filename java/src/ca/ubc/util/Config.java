@@ -17,7 +17,18 @@ public class Config {
   }
 
   public static enum Algorithm {
-    CELF, CELFPP
+    CELF("celf"),
+    CELFPP("celfplus");
+
+    private final String name;
+
+    Algorithm(String s) {
+      name = s;
+    }
+
+    public String toString() {
+      return this.name;
+    }
   }
 
   private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
@@ -69,9 +80,9 @@ public class Config {
   }
 
   private void setPropagationModel(String model) {
-    if (model.toLowerCase().equals("IC")) {
+    if (model.toUpperCase().equals("IC")) {
       propagationModel = PropagationModel.IC;
-    } else if (model.toLowerCase().equals("LT")) {
+    } else if (model.toUpperCase().equals("LT")) {
       propagationModel = PropagationModel.LT;
     } else {
       throw new RuntimeException("Propgation model not supported. " + model);
@@ -83,5 +94,19 @@ public class Config {
     LOGGER.info("Number of MC runs: " + mcRuns);
     LOGGER.info("Algorithm choice: " + algorithm);
     LOGGER.info("Output location " + outputDir);
+  }
+
+  /**
+   * @return name of log file
+   */
+  public String getLogFileName() {
+    StringBuilder sb = new StringBuilder("LOG_");
+    // assume the grpah file path is sth like: ./java/graph/hep_WC.inf, and we extract the "hep_WC" part
+    sb.append(graphFile.substring(graphFile.lastIndexOf("/") + 1, graphFile.lastIndexOf("."))).append("_");
+    sb.append(algorithm.toString()).append("_");
+    sb.append(mcRuns).append("_");
+    sb.append(numSeeds).append("_");
+    sb.append(System.currentTimeMillis()).append(".log");
+    return sb.toString();
   }
 }

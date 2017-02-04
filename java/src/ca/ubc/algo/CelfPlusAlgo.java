@@ -1,5 +1,6 @@
 package ca.ubc.algo;
 
+import ca.ubc.InfluenceMaximization;
 import ca.ubc.model.IndependentCascade;
 import ca.ubc.util.CelfNode;
 import ca.ubc.util.CelfPlusNode;
@@ -16,7 +17,7 @@ import java.util.logging.Logger;
  * Celf++ algorithm
  */
 public class CelfPlusAlgo {
-  private static final Logger LOGGER = Logger.getLogger(CelfPlusAlgo.class.getCanonicalName());
+  private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
 
   private PriorityQueue<CelfPlusNode> _covQueue;
   private Graph _graph;
@@ -41,9 +42,12 @@ public class CelfPlusAlgo {
    * Mine seeds
    */
   public double run() {
-    long startTime = System.currentTimeMillis();
+    final long startTime = System.currentTimeMillis();
 
     double totalSpread = 0;
+    int lookUps = 0;
+    int celfPlusSave = 0;
+
     _seedSet.clear();
     int lastSeedId = NULL_ID; // id of the last chosen seed
     int curBestId = NULL_ID;  // id of the current highest MG node in the priority queue
@@ -53,22 +57,26 @@ public class CelfPlusAlgo {
       CelfPlusNode node = new CelfPlusNode(nodeId, INITIAL_MG, INITIAL_MG, INITIAL_FLAG, curBestId);
       node.mg = IndependentCascade.estimateSpread(_graph, _config, _seedSet, node.id);
       _covQueue.add(node);
+      lookUps++;
     }
 
     // Select k seeds
     while(_seedSet.size() < _config.numSeeds) {
       CelfPlusNode bestNode = _covQueue.peek();
 
-      // flag is current seed set size
-      // means that the MG of bestNode is already up-to-date
-      // add this node as seed
+      // flag = current seed set size: found a seed
       if (bestNode.flag == _seedSet.size()) {
         _seedSet.add(bestNode.id);
-        totalSpread += bestNode.mg;
-        InfMaxUtils.logSeed(LOGGER, _seedSet.size(), bestNode.id, bestNode.mg, totalSpread, InfMaxUtils.runningTimeMin(startTime));
         lastSeedId = bestNode.id;
-        curBestId = NULL_ID;
+
+        totalSpread += bestNode.mg;
+        InfMaxUtils.logSeed(LOGGER, _seedSet.size(), bestNode.id, bestNode.mg, totalSpread,
+                lookUps, celfPlusSave, InfMaxUtils.runningTimeMin(startTime));
+
         _covQueue.poll();
+        lookUps = 0;
+        celfPlusSave = 0;
+        curBestId = NULL_ID;
 
       } else {
         CelfPlusNode newNode; // wait to be MG updated and re-heapifying
@@ -76,16 +84,17 @@ public class CelfPlusAlgo {
         // TODO: The IF-condition is never true in iteration 2, as no CELF++ in 1st iteration, can we do sth better here?
         if (bestNode.prevBest == lastSeedId && bestNode.flag == _seedSet.size() - 1) {
           // u.mg2 = u.mg1; skip MG re-computation
+          celfPlusSave++;
           // TODO Check: Should the new mg2 be 0 or be left alone
           newNode = new CelfPlusNode(bestNode.id, bestNode.mg2, 0, _seedSet.size(), bestNode.prevBest);
         } else {
           // need to do MG recomputation
+          lookUps++;
           double[] spreads = IndependentCascade.estimateSpreadPlus(_graph, _config, _seedSet,
               bestNode.id, bestNode.prevBest, true);
           newNode = new CelfPlusNode(bestNode.id, spreads[0] - totalSpread, spreads[1] - totalSpread,
               _seedSet.size(), curBestId);
         }
-
         // Re-heapify
         _covQueue.poll();
         _covQueue.add(newNode);

@@ -1,5 +1,7 @@
 package ca.ubc.util;
 
+import ca.ubc.InfluenceMaximization;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,7 +15,7 @@ import java.util.logging.Logger;
  */
 public class Graph {
 
-  private static final Logger LOGGER = Logger.getLogger(Graph.class.getCanonicalName());
+  private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
   private static final String SEPARATOR = " ";
 
   // TODO we should make those fields private

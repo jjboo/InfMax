@@ -1,6 +1,8 @@
 package ca.ubc.util;
 
+import java.util.logging.FileHandler;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 
 /**
@@ -14,24 +16,38 @@ public class InfMaxUtils {
    * log seed selection
    * Format of printing: seedCount \t seedNodeId \t MG \t totalSpread
    */
-  public static void logSeed(Logger logger, int cnt, int id, double mg, double totalSpread, double timeSpentInMin) {
+  public static void logSeed(Logger logger, int cnt, int id, double mg, double totalSpread,
+                             int lookUps, int celfPlusSave, double timeSpentInMin) {
     StringBuilder sb = new StringBuilder();
-    sb.append(cnt);
-    sb.append(TAB);
-    sb.append(id);
-    sb.append(TAB);
-    sb.append(mg);
-    sb.append(TAB);
-    sb.append(totalSpread);
-    sb.append(TAB);
-    sb.append(timeSpentInMin);
+    sb.append(cnt).append(TAB).
+            append(id).append(TAB)
+            .append(mg).append(TAB)
+            .append(totalSpread).append(TAB)
+            .append(lookUps).append(TAB)
+            .append(celfPlusSave).append(TAB)
+            .append(timeSpentInMin);
     logger.info(sb.toString());
   }
 
-  // running time in minutes
+  /**
+   * running time in minutes
+   */
   public static double runningTimeMin(long startTime) {
-    long curTime = System.currentTimeMillis();
-    double durationInMin = (double)(curTime - startTime) / (1000.0 * 60.0);
-    return durationInMin;
+    return (double) (System.currentTimeMillis() - startTime) / (1000.0 * 60.0);
   }
+
+  /**
+   * set log file for a specific logger
+   */
+  public static void setLogFile(Logger logger, Config config) {
+    try {
+      FileHandler fh = new FileHandler(config.getLogFileName());
+      logger.addHandler(fh);
+      SimpleFormatter formatter = new SimpleFormatter();
+      fh.setFormatter(formatter);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
 }

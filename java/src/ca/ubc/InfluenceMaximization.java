@@ -2,9 +2,14 @@ package ca.ubc;
 
 import ca.ubc.algo.CelfAlgo;
 import ca.ubc.algo.CelfPlusAlgo;
+import ca.ubc.model.IndependentCascade;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
+import ca.ubc.util.InfMaxUtils;
+
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.logging.Logger;
 
 /**
@@ -15,12 +20,11 @@ public class InfluenceMaximization {
   private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
 
   public static void main(String[] args) throws IOException {
-
-    String fileName = "./java/properties/config.properties";
-    Config config = new Config(fileName);
-
-    // TODO: Add code that measures running time
+    Config config = new Config("./java/properties/config.properties");
+    InfMaxUtils.setLogFile(LOGGER, config);
     run(config);
+    //testRun(config);
+    LOGGER.info("Program completed");
   }
 
   /**
@@ -40,5 +44,13 @@ public class InfluenceMaximization {
       LOGGER.warning("Invalid algorithm input, program exits");
       System.exit(-1);
     }
+  }
+
+  private static void testRun(Config config) {
+    Graph graph = new Graph(config.graphFile);
+    Set<Integer> set  = new HashSet<>();
+    set.add(1);
+    set.add(2);
+    System.out.println(IndependentCascade.estimateSpread(graph, config, set, null));
   }
 }

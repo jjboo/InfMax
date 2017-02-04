@@ -17,8 +17,15 @@ public class IndependentCascade {
 
   private static final Random RANDOM = new Random();
 
-  private static int bfs(Queue<Integer> queue, Graph graph, boolean[] active) {
-    int ret = 0;
+  /**
+   * Simulate influence spread under IC model
+   * @param queue Already activated nodes (typically seeds)
+   * @param graph Graph data
+   * @param active A boolean array specifying which nodes are activated (and not)
+   * @return Number of activated nodes in this particular simulation
+   */
+  private static int bfs(Graph graph, Queue<Integer> queue, boolean[] active) {
+    int count = 0;
 
     while (!queue.isEmpty()) {
       int w = queue.poll(); // this also removes w from BFS queue
@@ -30,17 +37,16 @@ public class IndependentCascade {
         int v = neighborList.get(j);
         // only look at inactive out-neighbours
         if (!active[v]) {
-          double prob = edgeProbs.get(j);
-          if (RANDOM.nextDouble() <= prob) {
+          if (RANDOM.nextDouble() <= edgeProbs.get(j)) {
             active[v] = true;
-            ret++;
             queue.add(v);
+            count++;
           }
         }
       }
     }
 
-    return ret;
+    return count;
   }
 
   /**
@@ -76,7 +82,7 @@ public class IndependentCascade {
       }
 
       // compute MG(u | S)
-      countActive += bfs(bfsQueue, graph, active);
+      countActive += bfs(graph, bfsQueue, active);
       ret[0] += (1.0 * countActive) / (1.0 * config.mcRuns);
 
       // compute mg2 = MG(u | S + prevBest)
@@ -86,7 +92,7 @@ public class IndependentCascade {
         //bfsQueue.clear();
         bfsQueue.add(curBest);
 
-        countActive += bfs(bfsQueue, graph, active);
+        countActive += bfs(graph, bfsQueue, active);
         ret[1] += (1.0 * countActive) / (1.0 * config.mcRuns);
       }
     }
@@ -125,10 +131,10 @@ public class IndependentCascade {
         bfsQueue.add(s);
       }
 
-      countActive += bfs(bfsQueue, graph, active);
-      ret += (1.0 * countActive) / (1.0 * config.mcRuns);
+      countActive += bfs(graph, bfsQueue, active);
+      ret += countActive;
     }
 
-    return ret;
+    return ret / (double) config.mcRuns;
   }
 }
