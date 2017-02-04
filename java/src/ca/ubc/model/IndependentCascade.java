@@ -83,7 +83,7 @@ public class IndependentCascade {
 
       // compute MG(u | S)
       countActive += bfs(graph, bfsQueue, active);
-      ret[0] += (1.0 * countActive) / (1.0 * config.mcRuns);
+      ret[0] += countActive;
 
       // compute mg2 = MG(u | S + prevBest)
       if (isCelfPlusOn && !active[curBest]) {
@@ -93,10 +93,12 @@ public class IndependentCascade {
         bfsQueue.add(curBest);
 
         countActive += bfs(graph, bfsQueue, active);
-        ret[1] += (1.0 * countActive) / (1.0 * config.mcRuns);
+        ret[1] += countActive;
       }
     }
 
+    ret[0] = ret[0] / (double) config.mcRuns;
+    ret[1] = ret[1] / (double) config.mcRuns;
     return ret;
   }
 
