@@ -41,28 +41,28 @@ public class Config {
   public String outputDir;
   public int startIter;
 
-  public Config(String fileName) {
+  public Config(String configfile, String graphFile, String outputDir) {
     Properties prop = new Properties();
     try {
-      InputStream input = new FileInputStream(fileName);
+      InputStream input = new FileInputStream(configfile);
       prop.load(input); // load a properties file
     } catch (Exception ex) {
       ex.printStackTrace();
     }
 
     // get the property values
-    graphFile = prop.getProperty("graphFile");
-    mcRuns = Integer.parseInt(prop.getProperty("mcRuns", "10000"));
-    numSeeds = Integer.parseInt(prop.getProperty("numSeeds", "50"));
+    this.graphFile =  graphFile; //prop.getProperty("graphFile");
+    this.outputDir = outputDir; // prop.getProperty("outputDir");
+    this.mcRuns = Integer.parseInt(prop.getProperty("mcRuns", "10000"));
+    this.numSeeds = Integer.parseInt(prop.getProperty("numSeeds", "50"));
     setAlgorithm(prop.getProperty("algo", "celf"));
-    outputDir = prop.getProperty("outputDir");
-    startIter = Integer.parseInt(prop.getProperty("startIter"));
+    this.startIter = Integer.parseInt(prop.getProperty("startIter"));
     setPropagationModel(prop.getProperty("model"));
 
-    if (mcRuns <= 0 || startIter <= 0) {
+    if (this.mcRuns <= 0 || this.startIter <= 0) {
       throw new RuntimeException("Values for mcRuns and startIter must be positive");
     }
-    if (graphFile == null || outputDir == null) {
+    if (this.graphFile == null || this.outputDir == null) {
       throw new RuntimeException("Input and output path cannot be null");
     }
 
@@ -91,22 +91,27 @@ public class Config {
 
   public void print() {
     LOGGER.info("Graph file path: " + graphFile);
-    LOGGER.info("Number of MC runs: " + mcRuns);
-    LOGGER.info("Algorithm choice: " + algorithm);
     LOGGER.info("Output location " + outputDir);
+    LOGGER.info("Algorithm choice: " + algorithm);
+    LOGGER.info("Number of MC runs: " + mcRuns);
+    LOGGER.info("Number of seeds " + numSeeds);
+    LOGGER.info("Propagation model " + propagationModel.toString());
   }
 
   /**
    * @return name of log file
    */
   public String getLogFileName() {
-    StringBuilder sb = new StringBuilder("LOG_");
+    StringBuilder sb = new StringBuilder();
+    sb.append(outputDir).append("/"); // put the log file under the output path
+
     // assume the grpah file path is sth like: ./java/graph/hep_WC.inf, and we extract the "hep_WC" part
     sb.append(graphFile.substring(graphFile.lastIndexOf("/") + 1, graphFile.lastIndexOf("."))).append("_");
     sb.append(algorithm.toString()).append("_");
     sb.append(mcRuns).append("_");
     sb.append(numSeeds).append("_");
     sb.append(System.currentTimeMillis()).append(".log");
+
     return sb.toString();
   }
 }
