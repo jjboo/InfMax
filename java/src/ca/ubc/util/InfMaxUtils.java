@@ -14,7 +14,7 @@ public class InfMaxUtils {
    * log seed selection
    * Format of printing: seedCount \t seedNodeId \t MG \t totalSpread
    */
-  public static void logSeed(int cnt, int id, double mg, double totalSpread, Logger logger, double timeSpentInMin) {
+  public static void logSeed(Logger logger, int cnt, int id, double mg, double totalSpread, double timeSpentInMin) {
     StringBuilder sb = new StringBuilder();
     sb.append(cnt);
     sb.append(TAB);
