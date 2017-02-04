@@ -55,11 +55,6 @@ public class IndependentCascade {
 
     boolean[] active = new boolean[graph.n];
     Queue<Integer> bfsQueue = new LinkedList<>();
-    //double ret = 0;
-
-    //candidateNode.mg = 0;
-    //candidateNode.mg2 = 0;
-
     double[] ret = new double[2];
 
     for (int i = 0; i < config.mcRuns; ++i) {
@@ -84,11 +79,11 @@ public class IndependentCascade {
       countActive += bfs(bfsQueue, graph, active);
       ret[0] += (1.0 * countActive) / (1.0 * config.mcRuns);
 
-      // compute mg2 = MG(u | S + curBest)
+      // compute mg2 = MG(u | S + prevBest)
       if (isCelfPlusOn && !active[curBest]) {
         active[curBest] = true;
         countActive++;
-        bfsQueue.clear();
+        //bfsQueue.clear();
         bfsQueue.add(curBest);
 
         countActive += bfs(bfsQueue, graph, active);

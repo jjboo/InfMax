@@ -49,20 +49,14 @@ public class CelfAlgo {
           INITIAL_FLAG));
     }
 
-    // get the first seed
-    CelfNode topNode = _covQueue.poll();
-    _seedSet.add(topNode.id);
-    totalSpread += topNode.mg;
-    InfMaxUtils.logSeed(_seedSet.size(), topNode.id, topNode.mg, totalSpread, LOGGER);
-
-    // get seeds no. 2 to k
+    // Select k seeds
     while (_seedSet.size() < _config.numSeeds) {
       CelfNode bestNode = _covQueue.peek();
 
+      // flag is current seed set size
+      // means that the MG of bestNode is already up-to-date
+      // add this node as seed
       if (bestNode.flag == _seedSet.size()) {
-        // flag is current seed set size
-        // means that the MG of bestNode is already up-to-date
-        // add this node as seed
         _seedSet.add(bestNode.id);
         totalSpread += bestNode.mg;
         InfMaxUtils.logSeed(_seedSet.size(), bestNode.id, bestNode.mg, totalSpread, LOGGER);
