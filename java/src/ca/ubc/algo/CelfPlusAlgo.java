@@ -64,6 +64,7 @@ public class CelfPlusAlgo {
     }
 
     // Select k seeds
+    //boolean isOptOn = false;
     while(_seedSet.size() < _config.numSeeds) {
       CelfPlusNode bestNode = _covQueue.peek();
 
@@ -89,12 +90,12 @@ public class CelfPlusAlgo {
           // u.mg2 = u.mg1; skip MG re-computation
           celfPlusSave++;
           // TODO Check: Should the new mg2 be 0 or be left alone
-          newNode = new CelfPlusNode(bestNode.id, bestNode.mg2, 0, _seedSet.size(), bestNode.prevBest);
+          newNode = new CelfPlusNode(bestNode.id, bestNode.mg2, 0, _seedSet.size(), NULL_ID);
         } else {
           // need to do MG recomputation
           lookUps++;
           double[] spreads = IndependentCascade.estimateSpreadPlus(_graph, _config, _seedSet,
-              bestNode.id, bestNode.prevBest, true);
+              bestNode.id, curBestId);
           newNode = new CelfPlusNode(bestNode.id, spreads[0] - totalSpread, spreads[1] - totalSpread,
               _seedSet.size(), curBestId);
         }

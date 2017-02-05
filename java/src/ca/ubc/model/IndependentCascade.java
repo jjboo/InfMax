@@ -53,11 +53,10 @@ public class IndependentCascade {
    * @param seeds Current seed set
    * @param candidate Seed candidate
    * @param curBest current best node
-   * @param isCelfPlusOn if celfplus is executed in this call
-   * @return An double array {mg, mg2}
+   * @return An double array {u.mg1, u.mg2}
    */
   public static double[] estimateSpreadPlus(Graph graph, Config config,
-      Set<Integer> seeds, int candidate, int curBest, boolean isCelfPlusOn) {
+      Set<Integer> seeds, int candidate, int curBest) {
 
     boolean[] active = new boolean[graph.n];
     Queue<Integer> bfsQueue = new LinkedList<>();
@@ -83,13 +82,13 @@ public class IndependentCascade {
 
       // compute MG(u | S)
       countActive += bfs(graph, bfsQueue, active);
+      assert bfsQueue.isEmpty();
       ret[0] += countActive;
 
       // compute mg2 = MG(u | S + prevBest)
-      if (isCelfPlusOn && !active[curBest]) {
+      if (curBest >= 0 && !active[curBest]) {
         active[curBest] = true;
         countActive++;
-        //bfsQueue.clear();
         bfsQueue.add(curBest);
 
         countActive += bfs(graph, bfsQueue, active);
@@ -134,6 +133,7 @@ public class IndependentCascade {
       }
 
       countActive += bfs(graph, bfsQueue, active);
+      assert bfsQueue.isEmpty();
       ret += countActive;
     }
 
