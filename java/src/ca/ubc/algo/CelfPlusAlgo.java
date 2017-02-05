@@ -26,7 +26,7 @@ public class CelfPlusAlgo {
 
   private static final double INITIAL_MG = 0.0;
   private static final int INITIAL_FLAG = 0;
-  private static final int NULL_ID = -2;
+  private static final int NULL_ID = -Integer.MAX_VALUE;
 
   /**
    * Constructor
@@ -51,6 +51,7 @@ public class CelfPlusAlgo {
     _seedSet.clear();
     int lastSeedId = NULL_ID; // id of the last chosen seed
     int curBestId = NULL_ID;  // id of the current highest MG node in the priority queue
+    double curBestMg = 0; // MG(curBestId | S)
 
     // first iteration
     for (int nodeId = 0; nodeId < _graph.n; ++nodeId) {
@@ -94,16 +95,24 @@ public class CelfPlusAlgo {
         } else {
           // need to do MG recomputation
           lookUps++;
-          double[] spreads = IndependentCascade.estimateSpreadPlus(_graph, _config, _seedSet,
-              bestNode.id, curBestId);
-          newNode = new CelfPlusNode(bestNode.id, spreads[0] - totalSpread, spreads[1] - totalSpread,
-              _seedSet.size(), curBestId);
+          double[] spreads = IndependentCascade.estimateSpreadPlus(_graph, _config, _seedSet, bestNode.id, curBestId);
+          double mg1 = spreads[0] - totalSpread;
+          double mg2 = (curBestId == NULL_ID) ? 0 : (spreads[1] - totalSpread - curBestMg);
+          newNode = new CelfPlusNode(bestNode.id, mg1, mg2, _seedSet.size(), curBestId);
         }
         // Re-heapify
         _covQueue.poll();
         _covQueue.add(newNode);
         // Update current Best
-        curBestId = _covQueue.peek().id;
+        if (curBestId == NULL_ID) {
+          curBestId = newNode.id;
+          curBestMg = newNode.mg;
+        } else {
+          if (newNode.mg > curBestMg) {
+            curBestId = newNode.id;
+            curBestMg = newNode.mg;
+          }
+        }
       }
     }
 

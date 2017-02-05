@@ -1,5 +1,6 @@
 package ca.ubc.model;
 
+import ca.ubc.InfluenceMaximization;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
 import java.util.Arrays;
@@ -8,13 +9,14 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
+import java.util.logging.Logger;
 
 
 /**
  * Implement spread computation for the IC model
  */
 public class IndependentCascade {
-
+  private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
   private static final Random RANDOM = new Random();
 
   /**
@@ -60,6 +62,8 @@ public class IndependentCascade {
 
     boolean[] active = new boolean[graph.n];
     Queue<Integer> bfsQueue = new LinkedList<>();
+
+    // ret[0] = sigma(S+u), ret[1] = sigma(S+u+curBest), both initialized to 0
     double[] ret = new double[2];
 
     for (int i = 0; i < config.mcRuns; ++i) {
@@ -82,13 +86,13 @@ public class IndependentCascade {
 
       // compute MG(u | S)
       countActive += bfs(graph, bfsQueue, active);
-      //assert bfsQueue.isEmpty();
       ret[0] += countActive;
+      ret[1] += countActive;
 
       // compute mg2 = MG(u | S + prevBest)
       if (curBest >= 0 && !active[curBest]) {
         active[curBest] = true;
-        countActive++;
+        countActive = 1;
         bfsQueue.add(curBest);
 
         countActive += bfs(graph, bfsQueue, active);
@@ -133,7 +137,6 @@ public class IndependentCascade {
       }
 
       countActive += bfs(graph, bfsQueue, active);
-      //assert bfsQueue.isEmpty();
       ret += countActive;
     }
 
