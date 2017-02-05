@@ -82,7 +82,7 @@ public class IndependentCascade {
 
       // compute MG(u | S)
       countActive += bfs(graph, bfsQueue, active);
-      assert bfsQueue.isEmpty();
+      //assert bfsQueue.isEmpty();
       ret[0] += countActive;
 
       // compute mg2 = MG(u | S + prevBest)
@@ -133,7 +133,7 @@ public class IndependentCascade {
       }
 
       countActive += bfs(graph, bfsQueue, active);
-      assert bfsQueue.isEmpty();
+      //assert bfsQueue.isEmpty();
       ret += countActive;
     }
 
