@@ -82,6 +82,7 @@ public class CelfPlusAlgo {
         lookUps = 0;
         celfPlusSave = 0;
         curBestId = NULL_ID;
+        curBestMg = 0;
 
       } else {
         CelfPlusNode newNode; // wait to be MG updated and re-heapifying
@@ -104,14 +105,9 @@ public class CelfPlusAlgo {
         _covQueue.poll();
         _covQueue.add(newNode);
         // Update current Best
-        if (curBestId == NULL_ID) {
+        if (newNode.mg > curBestMg) {
           curBestId = newNode.id;
           curBestMg = newNode.mg;
-        } else {
-          if (newNode.mg > curBestMg) {
-            curBestId = newNode.id;
-            curBestMg = newNode.mg;
-          }
         }
       }
     }
