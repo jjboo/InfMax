@@ -12,7 +12,12 @@ public class CelfNode extends Node {
   public static class NodeComparator implements Comparator<CelfNode> {
     @Override
     public int compare(CelfNode n1, CelfNode n2){
-      return Double.compare(n2.mg, n1.mg); // we want sorting in DESC order
+      if (n1.mg != n2.mg) {
+        return Double.compare(n2.mg, n1.mg); // we want sorting in DESC order
+      } else {
+        // marginal gains are same. lets use the node id to break the ties.
+        return Integer.compare(n1.id, n2.id);
+      }
     }
   }
 

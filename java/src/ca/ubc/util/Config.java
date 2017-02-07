@@ -40,6 +40,7 @@ public class Config {
   public Algorithm algorithm;
   public String outputDir;
   public int startIter;
+  public int rounding = Integer.MAX_VALUE;
 
   public Config(String configfile, String graphFile, String outputDir) {
     Properties prop = new Properties();
@@ -57,6 +58,7 @@ public class Config {
     this.numSeeds = Integer.parseInt(prop.getProperty("numSeeds", "50"));
     setAlgorithm(prop.getProperty("algo", "celf"));
     this.startIter = Integer.parseInt(prop.getProperty("startIter"));
+    this.rounding = Integer.parseInt(prop.getProperty("rounding"));
     setPropagationModel(prop.getProperty("model"));
 
     if (this.mcRuns <= 0 || this.startIter <= 0) {

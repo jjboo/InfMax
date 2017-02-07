@@ -104,8 +104,8 @@ public class CelfPlusAlgo {
         // Re-heapify
         _covQueue.poll();
         _covQueue.add(newNode);
-        // Update current Best
-        if (newNode.mg > curBestMg) {
+        // Update current Best. If mg is same, then use the node ids. Smaller node ids are preferred.
+        if (newNode.mg > curBestMg || (newNode.mg == curBestMg && newNode.id < curBestId)) {
           curBestId = newNode.id;
           curBestMg = newNode.mg;
         }

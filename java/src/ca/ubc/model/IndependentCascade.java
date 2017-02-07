@@ -3,6 +3,8 @@ package ca.ubc.model;
 import ca.ubc.InfluenceMaximization;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
+import ca.ubc.util.InfMaxUtils;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -100,8 +102,8 @@ public class IndependentCascade {
       }
     }
 
-    ret[0] = ret[0] / (double) config.mcRuns;
-    ret[1] = ret[1] / (double) config.mcRuns;
+    ret[0] = InfMaxUtils.round(ret[0] / (double) config.mcRuns, config.rounding);
+    ret[1] = InfMaxUtils.round(ret[1] / (double) config.mcRuns, config.rounding);
     return ret;
   }
 
@@ -140,6 +142,6 @@ public class IndependentCascade {
       ret += countActive;
     }
 
-    return ret / (double) config.mcRuns;
+    return InfMaxUtils.round(ret / (double) config.mcRuns, config.rounding);
   }
 }
