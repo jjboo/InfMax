@@ -6,6 +6,8 @@ import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
 import ca.ubc.util.InfMaxUtils;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Logger;
 
@@ -26,7 +28,7 @@ public class InfluenceMaximization {
 
     LOGGER.info("Command line arguments: " + args[0] + " " + args[1] + " " + args[2]);
     Config config = new Config(args[0], args[1], args[2]);
-    InfMaxUtils.setLogFile(LOGGER, config);
+    //InfMaxUtils.setLogFile(LOGGER, config);
     run(config);
     LOGGER.info("Program completed");
   }
@@ -37,27 +39,42 @@ public class InfluenceMaximization {
   private static void run(Config config) {
     Graph graph = new Graph(config.graphFile);
 
-    if (config.algorithm == Config.Algorithm.CELF) {
-      LOGGER.info("Running CELF");
-      CelfAlgo celfAlgo = new CelfAlgo(graph, config);
-      celfAlgo.run();
+    BufferedWriter bw = null;
+    FileWriter fw = null;
 
-    } else if (config.algorithm == Config.Algorithm.CELFPP) {
-      LOGGER.info("Running CELF++");
-      CelfPlusAlgo celfPlusAlgo = new CelfPlusAlgo(graph, config);
-      celfPlusAlgo.run();
+    try {
+      String logFileName = config.getLogFileName();
+      fw = new FileWriter(logFileName);
+      bw = new BufferedWriter(fw);
 
-    } else {
-      LOGGER.warning("Invalid algorithm input, program exits");
+      if (config.algorithm == Config.Algorithm.CELF) {
+        LOGGER.info("Running CELF");
+        CelfAlgo celfAlgo = new CelfAlgo(graph, config, bw);
+        celfAlgo.run();
+      } else if (config.algorithm == Config.Algorithm.CELFPP) {
+        LOGGER.info("Running CELF++");
+        CelfPlusAlgo celfPlusAlgo = new CelfPlusAlgo(graph, config, bw);
+        celfPlusAlgo.run();
+      } else {
+        LOGGER.warning("Invalid algorithm input, program exits");
+        System.exit(-1);
+      }
+
+    } catch (IOException e) {
+      e.printStackTrace();
       System.exit(-1);
+    } finally {
+      try {
+        if (bw != null) {
+          bw.close();
+        }
+        if (fw != null) {
+          fw.close();
+        }
+      } catch (IOException e) {
+        e.printStackTrace();
+        System.exit(-1);
+      }
     }
   }
-
-  //private static void testRun(Config config) {
-  //  Graph graph = new Graph(config.graphFile);
-  //  Set<Integer> set  = new HashSet<>();
-  //  set.add(1);
-  //  set.add(2);
-  //  System.out.println(IndependentCascade.estimateSpread(graph, config, set, null));
-  //}
 }

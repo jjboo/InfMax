@@ -63,6 +63,7 @@ public class Graph {
       }
     } catch (IOException e) {
       e.printStackTrace();
+      System.exit(-1);
     } finally {
       try {
         if (br != null) {
@@ -70,6 +71,7 @@ public class Graph {
         }
       } catch (IOException e) {
         e.printStackTrace();
+        System.exit(-1);
       }
     }
 

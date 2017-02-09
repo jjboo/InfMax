@@ -7,6 +7,8 @@ import ca.ubc.util.CelfPlusNode;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
 import ca.ubc.util.InfMaxUtils;
+import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Set;
@@ -23,6 +25,7 @@ public class CelfPlusAlgo {
   private Graph _graph;
   private Config _config;
   private Set<Integer> _seedSet;
+  private BufferedWriter _bufferedWriter;
 
   private static final double INITIAL_MG = 0.0;
   private static final int INITIAL_FLAG = 0;
@@ -31,17 +34,18 @@ public class CelfPlusAlgo {
   /**
    * Constructor
    */
-  public CelfPlusAlgo(Graph graph, Config config) {
+  public CelfPlusAlgo(Graph graph, Config config, BufferedWriter bufferedWriter) {
     _graph = graph;
     _config = config;
     _seedSet = new HashSet<>();
     _covQueue = new PriorityQueue<>(new CelfNode.NodeComparator());
+    _bufferedWriter = bufferedWriter;
   }
 
   /**
    * Mine seeds
    */
-  public double run() {
+  public double run() throws IOException {
     final long startTime = System.currentTimeMillis();
 
     double totalSpread = 0;
@@ -75,8 +79,9 @@ public class CelfPlusAlgo {
         lastSeedId = bestNode.id;
 
         totalSpread += bestNode.mg;
-        InfMaxUtils.logSeed(LOGGER, _seedSet.size(), bestNode.id, bestNode.mg, totalSpread,
+        String msg = InfMaxUtils.logSeed(LOGGER, _seedSet.size(), bestNode.id, bestNode.mg, totalSpread,
                 lookUps, celfPlusSave, InfMaxUtils.runningTimeMin(startTime));
+        _bufferedWriter.write(msg);
 
         _covQueue.poll();
         lookUps = 0;

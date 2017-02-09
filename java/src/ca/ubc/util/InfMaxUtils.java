@@ -1,5 +1,6 @@
 package ca.ubc.util;
 
+import java.io.BufferedWriter;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -16,7 +17,7 @@ public class InfMaxUtils {
    * log seed selection
    * Format of printing: seedCount \t seedNodeId \t MG \t totalSpread
    */
-  public static void logSeed(Logger logger, int cnt, int id, double mg, double totalSpread,
+  public static String logSeed(Logger logger, int cnt, int id, double mg, double totalSpread,
                              int lookUps, int celfPlusSave, double timeSpentInMin) {
     StringBuilder sb = new StringBuilder();
     sb.append(cnt).append(TAB).append(id).append(TAB)
@@ -25,7 +26,9 @@ public class InfMaxUtils {
             .append(lookUps).append(TAB)
             .append(celfPlusSave).append(TAB)
             .append(String.format("%.5f", timeSpentInMin));
-    logger.info(sb.toString());
+    String msg = sb.toString();
+    logger.info(msg);
+    return msg + "\n";
   }
 
   /**

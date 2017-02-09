@@ -41,6 +41,7 @@ public class Config {
   public String outputDir;
   public int startIter;
   public int rounding = Integer.MAX_VALUE;
+  private long randSeed;
 
   public Config(String configfile, String graphFile, String outputDir) {
     Properties prop = new Properties();
@@ -60,6 +61,7 @@ public class Config {
     this.startIter = Integer.parseInt(prop.getProperty("startIter"));
     this.rounding = Integer.parseInt(prop.getProperty("rounding"));
     setPropagationModel(prop.getProperty("model"));
+    this.randSeed = Long.parseLong(prop.getProperty("randSeed", "0"));
 
     if (this.mcRuns <= 0 || this.startIter <= 0) {
       throw new RuntimeException("Values for mcRuns and startIter must be positive");
@@ -71,6 +73,9 @@ public class Config {
     print();
   }
 
+  /**
+   * Set which algorithm to use
+   */
   private void setAlgorithm(String algo) {
     if (algo.toLowerCase().equals("celf")) {
       algorithm = Algorithm.CELF;
@@ -81,6 +86,9 @@ public class Config {
     }
   }
 
+  /**
+   * Set which propagation model to use
+   */
   private void setPropagationModel(String model) {
     if (model.toUpperCase().equals("IC")) {
       propagationModel = PropagationModel.IC;
@@ -91,13 +99,24 @@ public class Config {
     }
   }
 
+  /**
+   * Return seed to the random number generator
+   */
+  public long getRandSeed() {
+    return this.randSeed;
+  }
+
+  /**
+   * Print the parameters for this exec
+   */
   public void print() {
-    LOGGER.info("Graph file path: " + graphFile);
-    LOGGER.info("Output location " + outputDir);
-    LOGGER.info("Algorithm choice: " + algorithm);
-    LOGGER.info("Number of MC runs: " + mcRuns);
-    LOGGER.info("Number of seeds " + numSeeds);
-    LOGGER.info("Propagation model " + propagationModel.toString());
+    LOGGER.info("Graph file path: " + this.graphFile);
+    LOGGER.info("Output location " + this.outputDir);
+    LOGGER.info("Algorithm choice: " + this.algorithm);
+    LOGGER.info("Number of MC runs: " + this.mcRuns);
+    LOGGER.info("Number of seeds " + this.numSeeds);
+    LOGGER.info("Propagation model " + this.propagationModel.toString());
+    LOGGER.info("Random number seed" + this.randSeed);
   }
 
   /**
@@ -112,6 +131,7 @@ public class Config {
     sb.append(algorithm.toString()).append("_");
     sb.append(mcRuns).append("_");
     sb.append(numSeeds).append("_");
+    sb.append(randSeed).append("_");
     sb.append(System.currentTimeMillis()).append(".log");
 
     return sb.toString();
