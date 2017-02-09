@@ -93,6 +93,9 @@ public class CelfPlusAlgo {
           celfPlusSave++;
           // TODO Check: Should the new mg2 be 0 or be left alone
           newNode = new CelfPlusNode(bestNode.id, bestNode.mg2, 0, _seedSet.size(), NULL_ID);
+        } else if (_seedSet.contains(bestNode.prevBest) && bestNode.flag <= _seedSet.size() - 1) {
+          celfPlusSave++;
+          newNode = new CelfPlusNode(bestNode.id, bestNode.mg2, 0, _seedSet.size() - 1, NULL_ID);
         } else {
           // need to do MG recomputation
           lookUps++;
