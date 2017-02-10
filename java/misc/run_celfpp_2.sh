@@ -1,0 +1,5 @@
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487250408702 > ./logs/celfpp.6.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487279644726 > ./logs/celfpp.7.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487450421461 > ./logs/celfpp.8.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487591183783 > ./logs/celfpp.9.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487655592522 > ./logs/celfpp.10.out &
