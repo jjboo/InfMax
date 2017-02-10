@@ -71,9 +71,8 @@ public class CelfAlgo {
       if (bestNode.flag == _seedSet.size()) {
         _seedSet.add(bestNode.id);
         totalSpread += bestNode.mg;
-        String msg = InfMaxUtils.logSeed(LOGGER, _seedSet.size(), bestNode.id, bestNode.mg, totalSpread,
-                lookUps, 0, InfMaxUtils.runningTimeMin(startTime));
-        _bufferedWriter.write(msg);
+        InfMaxUtils.logSeed(LOGGER, _seedSet.size(), bestNode.id, bestNode.mg, totalSpread,
+                lookUps, 0, InfMaxUtils.runningTimeMin(startTime), _config, _bufferedWriter);
         _covQueue.poll();
         lookUps = 0; // reset
       } else {
