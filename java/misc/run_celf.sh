@@ -1,5 +1,10 @@
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1486687796091 > ./logs/celf.1.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1486769519600 > ./logs/celf.2.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1486798151463 > ./logs/celf.3.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1486965272453 > ./logs/celf.4.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1487117004161 > ./logs/celf.5.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1487723611282 > ./logs/celf.11.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1487741310690 > ./logs/celf.12.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1487851696510 > ./logs/celf.13.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1487868673248 > ./logs/celf.14.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1487923818091 > ./logs/celf.15.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1488034002257 > ./logs/celf.16.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1488185956693 > ./logs/celf.17.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1488202599964 > ./logs/celf.18.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1488255084020 > ./logs/celf.19.out &
+nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celf_10K_200.properties ./graph/hep_WC.inf ./outputs 1488314347675 > ./logs/celf.20.out &
