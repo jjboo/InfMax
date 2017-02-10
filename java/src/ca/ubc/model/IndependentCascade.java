@@ -1,6 +1,5 @@
 package ca.ubc.model;
 
-import ca.ubc.InfluenceMaximization;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
 import ca.ubc.util.InfMaxUtils;
@@ -11,15 +10,19 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
-import java.util.logging.Logger;
 
 
 /**
  * Implement spread computation for the IC model
+ *
+ * TODO For better OOP practice, we need to create a parent abstract class or interface called Model, and let concrect model classes such as IC (this one) or LT inherit it
  */
 public class IndependentCascade {
-  private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
-  private static final Random RANDOM = new Random();
+  private final Random _random;
+
+  public IndependentCascade(long seed) {
+    _random = new Random(seed);
+  }
 
   /**
    * Simulate influence spread under IC model
@@ -28,7 +31,7 @@ public class IndependentCascade {
    * @param active A boolean array specifying which nodes are activated (and not)
    * @return Number of activated nodes in this particular simulation
    */
-  private static int bfs(Graph graph, Queue<Integer> queue, boolean[] active) {
+  private int bfs(Graph graph, Queue<Integer> queue, boolean[] active) {
     int count = 0;
 
     while (!queue.isEmpty()) {
@@ -41,7 +44,7 @@ public class IndependentCascade {
         int v = neighborList.get(j);
         // only look at inactive out-neighbours
         if (!active[v]) {
-          if (RANDOM.nextDouble() <= edgeProbs.get(j)) {
+          if (_random.nextDouble() <= edgeProbs.get(j)) {
             active[v] = true;
             queue.add(v);
             count++;
@@ -59,7 +62,7 @@ public class IndependentCascade {
    * @param curBest current best node
    * @return An double array {u.mg1, u.mg2}
    */
-  public static double[] estimateSpreadPlus(Graph graph, Config config,
+  public double[] estimateSpreadPlus(Graph graph, Config config,
       Set<Integer> seeds, int candidate, int curBest) {
 
     boolean[] active = new boolean[graph.n];
@@ -112,7 +115,7 @@ public class IndependentCascade {
    * @param seeds Current seed set
    * @param candidate Seed candidate id
    */
-  public static double estimateSpread(Graph graph, Config config,
+  public double estimateSpread(Graph graph, Config config,
       Set<Integer> seeds, Integer candidate) {
 
     boolean[] active = new boolean[graph.n];

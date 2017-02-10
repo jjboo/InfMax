@@ -12,11 +12,11 @@ import java.util.logging.Logger;
  */
 public class Config {
 
-  public static enum PropagationModel {
+  public enum PropagationModel {
     IC, LT
   }
 
-  public static enum Algorithm {
+  public enum Algorithm {
     CELF("celf"),
     CELFPP("celfplus");
 
@@ -33,6 +33,7 @@ public class Config {
 
   private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
 
+  // TODO: these variables should be private or protected at least
   public String graphFile;
   public int numSeeds;
   public int mcRuns;
@@ -43,7 +44,7 @@ public class Config {
   public int rounding = Integer.MAX_VALUE;
   private long randSeed;
 
-  public Config(String configfile, String graphFile, String outputDir) {
+  public Config(String configfile, String graphFile, String outputDir, String randSeedStr) {
     Properties prop = new Properties();
     try {
       InputStream input = new FileInputStream(configfile);
@@ -61,7 +62,7 @@ public class Config {
     this.startIter = Integer.parseInt(prop.getProperty("startIter"));
     this.rounding = Integer.parseInt(prop.getProperty("rounding"));
     setPropagationModel(prop.getProperty("model"));
-    this.randSeed = Long.parseLong(prop.getProperty("randSeed", "0"));
+    this.randSeed = Long.parseLong(randSeedStr);
 
     if (this.mcRuns <= 0 || this.startIter <= 0) {
       throw new RuntimeException("Values for mcRuns and startIter must be positive");
@@ -111,12 +112,12 @@ public class Config {
    */
   public void print() {
     LOGGER.info("Graph file path: " + this.graphFile);
-    LOGGER.info("Output location " + this.outputDir);
+    LOGGER.info("Output location: " + this.outputDir);
     LOGGER.info("Algorithm choice: " + this.algorithm);
     LOGGER.info("Number of MC runs: " + this.mcRuns);
-    LOGGER.info("Number of seeds " + this.numSeeds);
-    LOGGER.info("Propagation model " + this.propagationModel.toString());
-    LOGGER.info("Random number seed" + this.randSeed);
+    LOGGER.info("Number of seeds: " + this.numSeeds);
+    LOGGER.info("Propagation model: " + this.propagationModel.toString());
+    LOGGER.info("Random number generator's seed: " + this.randSeed);
   }
 
   /**

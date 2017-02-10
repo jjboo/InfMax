@@ -4,7 +4,6 @@ import ca.ubc.algo.CelfAlgo;
 import ca.ubc.algo.CelfPlusAlgo;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
-import ca.ubc.util.InfMaxUtils;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -18,17 +17,22 @@ public class InfluenceMaximization {
 
   private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
 
-  private static final int NUM_ARGS = 3;
+  private static final int NUM_ARGS = 4;
 
   public static void main(String[] args) throws IOException {
     if (args.length != NUM_ARGS) {
-      System.out.println("Usage: java -classpath InfMax.jar ca.ubc.InfluenceMaximization [configFile] [graphFile] [outputDir]");
+      StringBuilder sb = new StringBuilder();
+      sb.append("Usage: java -classpath InfMax.jar ca.ubc.InfluenceMaximization [configFile] [graphFile] [outputDir] [randSeed]\n");
+      sb.append("[configFile]: path to a config property file");
+      sb.append("[graphFile]: path to the input graph file (dataset)");
+      sb.append("[outputDir]: location to store output logs");
+      sb.append("[randSeed]: Seed of the random number generator");
+      System.out.println(sb.toString());
       System.exit(-1);
     }
 
-    LOGGER.info("Command line arguments: " + args[0] + " " + args[1] + " " + args[2]);
-    Config config = new Config(args[0], args[1], args[2]);
-    //InfMaxUtils.setLogFile(LOGGER, config);
+    LOGGER.info("Command line arguments: " + args[0] + " " + args[1] + " " + args[2] + " " + args[3]);
+    Config config = new Config(args[0], args[1], args[2], args[3]);
     run(config);
     LOGGER.info("Program completed");
   }

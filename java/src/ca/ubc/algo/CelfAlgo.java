@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 
 /**
- * Celf
+ * Class that executes CELF with MC simulations for seed selection
  */
 public class CelfAlgo {
 
@@ -26,6 +26,7 @@ public class CelfAlgo {
   private Config _config;
   private Set<Integer> _seedSet;
   private BufferedWriter _bufferedWriter;
+  private IndependentCascade _cascade;
 
   private static final int INITIAL_FLAG = 0;
 
@@ -37,6 +38,7 @@ public class CelfAlgo {
     _config = config;
     _covQueue = new PriorityQueue<>(new CelfNode.NodeComparator());
     _seedSet = new HashSet<>();
+    _cascade = new IndependentCascade(config.getRandSeed());
     _bufferedWriter = bufferedWriter;
   }
 
@@ -53,7 +55,7 @@ public class CelfAlgo {
 
     // first iteration
     for (int nodeId = 0; nodeId < _graph.n; ++nodeId) {
-      CelfNode node = new CelfNode(nodeId, IndependentCascade.estimateSpread(_graph, _config, _seedSet, nodeId), INITIAL_FLAG);
+      CelfNode node = new CelfNode(nodeId, _cascade.estimateSpread(_graph, _config, _seedSet, nodeId), INITIAL_FLAG);
       _covQueue.add(node);
       if (nodeId % 1000 == 0) {
         LOGGER.info(node.id + "\t" + String.format("%.5f", node.mg));
@@ -76,7 +78,7 @@ public class CelfAlgo {
         lookUps = 0; // reset
       } else {
         // re-compute MG
-        double newMg = IndependentCascade.estimateSpread(_graph, _config, _seedSet, bestNode.id) - totalSpread;
+        double newMg = _cascade.estimateSpread(_graph, _config, _seedSet, bestNode.id) - totalSpread;
         lookUps++;
         // update flag and re-heapify
         int id = bestNode.id;

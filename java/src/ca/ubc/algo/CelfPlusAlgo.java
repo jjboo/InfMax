@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 
 
 /**
- * Celf++ algorithm
+ * Class that executes CELF++ with MC simulations for seed selection
  */
 public class CelfPlusAlgo {
   private static final Logger LOGGER = Logger.getLogger(InfluenceMaximization.class.getCanonicalName());
@@ -25,6 +25,7 @@ public class CelfPlusAlgo {
   private Graph _graph;
   private Config _config;
   private Set<Integer> _seedSet;
+  private IndependentCascade _cascade;
   private BufferedWriter _bufferedWriter;
 
   private static final double INITIAL_MG = 0.0;
@@ -39,6 +40,7 @@ public class CelfPlusAlgo {
     _config = config;
     _seedSet = new HashSet<>();
     _covQueue = new PriorityQueue<>(new CelfNode.NodeComparator());
+    _cascade = new IndependentCascade(config.getRandSeed());
     _bufferedWriter = bufferedWriter;
   }
 
@@ -60,7 +62,7 @@ public class CelfPlusAlgo {
     // first iteration
     for (int nodeId = 0; nodeId < _graph.n; ++nodeId) {
       CelfPlusNode node = new CelfPlusNode(nodeId, INITIAL_MG, INITIAL_MG, INITIAL_FLAG, curBestId);
-      node.mg = IndependentCascade.estimateSpread(_graph, _config, _seedSet, node.id);
+      node.mg = _cascade.estimateSpread(_graph, _config, _seedSet, node.id);
       _covQueue.add(node);
       if (nodeId % 1000 == 0) {
         LOGGER.info(node.id + "\t" + String.format("%.5f", node.mg));
@@ -104,7 +106,7 @@ public class CelfPlusAlgo {
         } else {
           // need to do MG recomputation
           lookUps++;
-          double[] spreads = IndependentCascade.estimateSpreadPlus(_graph, _config, _seedSet, bestNode.id, curBestId);
+          double[] spreads = _cascade.estimateSpreadPlus(_graph, _config, _seedSet, bestNode.id, curBestId);
           double mg1 = spreads[0] - totalSpread;
           double mg2 = (curBestId == NULL_ID) ? 0 : (spreads[1] - totalSpread - curBestMg);
           newNode = new CelfPlusNode(bestNode.id, mg1, mg2, _seedSet.size(), curBestId);
