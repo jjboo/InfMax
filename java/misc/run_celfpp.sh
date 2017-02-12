@@ -1,10 +1,10 @@
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487723611282 > ./logs/celfpp.11.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487741310690 > ./logs/celfpp.12.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487851696510 > ./logs/celfpp.13.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487868673248 > ./logs/celfpp.14.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1487923818091 > ./logs/celfpp.15.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1488034002257 > ./logs/celfpp.16.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1488185956693 > ./logs/celfpp.17.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1488202599964 > ./logs/celfpp.18.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1488255084020 > ./logs/celfpp.19.out &
-nohup java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs 1488314347675 > ./logs/celfpp.20.out &
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1487723611282 
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1487741310690 
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1487851696510  
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1487868673248 
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1487923818091
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1488034002257
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1488185956693
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1488202599964
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1488255084020
+time java -classpath InfMax.jar ca.ubc.InfluenceMaximization ./properties/config_celfpp_10K_200.properties ./graph/hep_WC.inf ./outputs_amit 1488314347675
