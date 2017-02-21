@@ -176,7 +176,7 @@ public class IndependentCascade {
     }
 
     double[] stats = new double[3]; // expected spread, mean, std dev
-    stats[0] = spread;
+    stats[0] = spread / (double) config.mcRuns;
     stats[1] = computeMean(countActive);
     stats[2] = computeStdDev(countActive);
     return stats;

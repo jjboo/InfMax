@@ -36,10 +36,10 @@ public class EvaluateInfluenceSpread {
    */
   public void run() throws IOException {
     BufferedReader br = new BufferedReader(new FileReader(_config.getSeedFileName()));
-    String line;
-    while ((line = br.readLine()) != null) {
-      int seed = Integer.parseInt(line);
-      _seedSet.add(seed);
+    String line = br.readLine();
+    String[] ids = line.split(" ");
+    for (String id : ids) {
+      _seedSet.add(Integer.parseInt(id));
     }
     br.close();
 
