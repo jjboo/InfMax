@@ -1,0 +1,2640 @@
+Mar 03, 2017 11:42:30 AM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1487723611282
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1487723611282
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 03, 2017 11:42:30 AM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 03, 2017 11:42:30 AM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 03, 2017 11:42:31 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	128.50000
+Mar 03, 2017 11:52:50 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.13000
+Mar 03, 2017 11:56:41 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.37000
+Mar 03, 2017 11:59:22 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.42000
+Mar 03, 2017 12:01:16 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.37000
+Mar 03, 2017 12:02:57 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	165.58000
+Mar 03, 2017 12:04:45 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	183.53000
+Mar 03, 2017 12:06:45 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	40.79000
+Mar 03, 2017 12:08:12 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 03, 2017 12:09:37 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	93.06000
+Mar 03, 2017 12:11:01 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.22000
+Mar 03, 2017 12:12:02 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	42.35000
+Mar 03, 2017 12:13:20 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	9.69000
+Mar 03, 2017 12:14:17 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.44000
+Mar 03, 2017 12:14:59 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.83000
+Mar 03, 2017 12:15:44 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	2.43000
+Mar 03, 2017 12:15:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	643.95000	643.95000	15233	0	33.38393
+Mar 03, 2017 2:36:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	11414	35.81000	679.76000	2978	0	173.55092
+Mar 03, 2017 3:18:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	639	19.03000	698.79000	857	0	215.67713
+Mar 03, 2017 3:25:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	9261	17.78000	716.57000	148	1	223.25135
+Mar 03, 2017 3:48:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	7854	14.94000	731.51000	430	23	245.74795
+Mar 03, 2017 3:54:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	13257	14.09000	745.60000	112	3	251.73007
+Mar 03, 2017 4:28:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	1292	11.03000	756.63000	634	5	286.25475
+Mar 03, 2017 4:36:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	66	10.43000	767.06000	145	1	294.23097
+Mar 03, 2017 5:12:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	192	8.29000	775.35000	648	27	330.21793
+Mar 03, 2017 5:32:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	884	7.49000	782.84000	346	43	349.60650
+Mar 03, 2017 6:04:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	8450	7.99000	790.83000	576	94	382.06778
+Mar 03, 2017 6:31:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	989	5.67000	796.50000	474	63	409.02472
+Mar 03, 2017 6:39:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	563	5.81000	802.31000	146	22	417.38188
+Mar 03, 2017 6:48:42 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	3158	5.35000	807.66000	153	27	426.20112
+Mar 03, 2017 6:51:59 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	4824	6.30000	813.96000	57	6	429.48998
+Mar 03, 2017 6:55:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	682	5.14000	819.10000	55	6	432.69910
+Mar 03, 2017 6:55:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	793	6.42000	825.52000	1	0	432.75828
+Mar 03, 2017 7:10:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	4576	4.80000	830.32000	266	22	448.42393
+Mar 03, 2017 7:37:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	4280	4.34000	834.66000	446	34	474.82085
+Mar 03, 2017 7:50:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	1153	4.51000	839.17000	226	16	488.28122
+Mar 03, 2017 7:54:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	36	4.20000	843.37000	62	2	491.98555
+Mar 03, 2017 7:57:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	37	5.08000	848.45000	44	0	494.62558
+Mar 03, 2017 7:57:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	1221	5.27000	853.72000	1	0	494.68638
+Mar 03, 2017 7:57:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	1242	4.28000	858.00000	4	0	494.92840
+Mar 03, 2017 7:59:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	63	4.30000	862.30000	38	0	497.24220
+Mar 03, 2017 8:15:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	307	4.30000	866.60000	253	9	512.64950
+Mar 03, 2017 8:17:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	572	4.31000	870.91000	38	1	514.97898
+Mar 03, 2017 8:17:40 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	3433	3.81000	874.72000	3	1	515.16202
+Mar 03, 2017 8:24:16 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	1827	4.70000	879.42000	107	8	521.76402
+Mar 03, 2017 8:25:49 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	1528	4.08000	883.50000	25	1	523.31043
+Mar 03, 2017 8:27:33 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	92	3.60000	887.10000	28	1	525.05272
+Mar 03, 2017 8:28:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	866	3.65000	890.75000	19	2	526.23535
+Mar 03, 2017 8:29:37 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	5124	4.33000	895.08000	14	1	527.11140
+Mar 03, 2017 8:55:33 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	1755	3.22000	898.30000	413	18	553.05988
+Mar 03, 2017 9:02:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	1423	3.14000	901.44000	105	2	559.68008
+Mar 03, 2017 9:03:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	1943	4.26000	905.70000	13	1	560.50143
+Mar 03, 2017 9:03:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	1758	3.66000	909.36000	15	1	561.45277
+Mar 03, 2017 9:07:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	3770	3.55000	912.91000	57	1	565.07523
+Mar 03, 2017 9:08:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	412	4.13000	917.04000	20	0	566.35293
+Mar 03, 2017 9:08:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	545	3.99000	921.03000	1	0	566.41703
+Mar 03, 2017 9:09:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	7835	3.60000	924.63000	8	1	566.93270
+Mar 03, 2017 9:09:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	1188	3.75000	928.38000	5	0	567.25477
+Mar 03, 2017 9:14:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	76	3.66000	932.04000	74	4	572.03802
+Mar 03, 2017 9:15:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	9771	3.66000	935.70000	16	0	573.07873
+Mar 03, 2017 9:16:18 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	632	4.23000	939.93000	11	2	573.79378
+Mar 03, 2017 9:16:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	1570	3.61000	943.54000	3	0	573.99147
+Mar 03, 2017 9:17:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	507	4.04000	947.58000	8	1	574.51498
+Mar 03, 2017 9:19:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	6174	3.23000	950.81000	31	0	576.55240
+Mar 03, 2017 9:24:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	7295	3.64000	954.45000	84	0	582.08482
+Mar 03, 2017 9:25:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	375	2.95000	957.40000	20	0	583.41025
+Mar 03, 2017 9:28:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	60	3.45000	960.85000	46	1	586.45917
+Mar 03, 2017 9:31:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	1162	2.87000	963.72000	31	1	588.52142
+Mar 03, 2017 9:31:05 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	1391	3.01000	966.73000	1	0	588.58757
+Mar 03, 2017 9:46:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	7369	2.80000	969.53000	230	11	603.94158
+Mar 03, 2017 9:48:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	7267	2.66000	972.19000	34	2	606.21275
+Mar 03, 2017 9:50:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	6072	3.80000	975.99000	20	0	607.56035
+Mar 03, 2017 9:50:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	9716	3.17000	979.16000	1	0	607.62803
+Mar 03, 2017 9:51:25 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	1103	3.38000	982.54000	19	1	608.91242
+Mar 03, 2017 9:51:37 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	4545	2.95000	985.49000	3	0	609.11615
+Mar 03, 2017 9:54:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1515	3.58000	989.07000	43	0	612.04212
+Mar 03, 2017 9:57:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	12879	2.69000	991.76000	44	2	615.03517
+Mar 03, 2017 10:02:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	367	2.64000	994.40000	67	5	619.61322
+Mar 03, 2017 10:05:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	315	2.60000	997.00000	55	0	623.37918
+Mar 03, 2017 10:06:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	754	3.77000	1000.77000	2	0	623.51665
+Mar 03, 2017 10:09:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	2069	2.65000	1003.42000	56	3	627.36810
+Mar 03, 2017 10:10:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	1435	2.62000	1006.04000	12	2	628.19093
+Mar 03, 2017 10:11:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	3978	2.82000	1008.86000	5	0	628.53560
+Mar 03, 2017 10:11:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	5167	3.45000	1012.31000	1	0	628.60507
+Mar 03, 2017 10:12:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	650	3.18000	1015.49000	20	1	629.99163
+Mar 03, 2017 10:13:40 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	5456	2.48000	1017.97000	17	0	631.17333
+Mar 03, 2017 10:23:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	3656	2.55000	1020.52000	136	5	640.63077
+Mar 03, 2017 10:24:39 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	585	2.58000	1023.10000	22	1	642.15535
+Mar 03, 2017 10:25:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	908	2.40000	1025.50000	6	3	642.57440
+Mar 03, 2017 10:25:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	2038	2.50000	1028.00000	2	0	642.71432
+Mar 03, 2017 10:25:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	12256	2.88000	1030.88000	6	0	643.13553
+Mar 03, 2017 10:30:20 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	10084	2.49000	1033.37000	67	2	647.83545
+Mar 03, 2017 10:34:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	4469	2.41000	1035.78000	61	1	652.12982
+Mar 03, 2017 10:34:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	10091	2.67000	1038.45000	4	0	652.41152
+Mar 03, 2017 10:40:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	1635	2.37000	1040.82000	85	4	658.41372
+Mar 03, 2017 10:47:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	4030	2.26000	1043.08000	87	5	664.56872
+Mar 03, 2017 10:48:33 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	6754	2.92000	1046.00000	21	2	666.05693
+Mar 03, 2017 10:51:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	8372	2.31000	1048.31000	39	4	668.82562
+Mar 03, 2017 10:52:24 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	7774	2.36000	1050.67000	15	0	669.89422
+Mar 03, 2017 11:09:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	2626	2.41000	1053.08000	244	16	687.25842
+Mar 03, 2017 11:10:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	151	2.63000	1055.71000	16	2	688.39620
+Mar 03, 2017 11:11:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	1449	2.71000	1058.42000	5	1	688.75413
+Mar 03, 2017 11:11:24 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	2011	2.18000	1060.60000	2	0	688.89783
+Mar 03, 2017 11:11:28 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	2463	3.19000	1063.79000	1	0	688.97008
+Mar 03, 2017 11:11:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	6722	2.12000	1065.91000	4	2	689.25832
+Mar 03, 2017 11:11:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	12342	2.58000	1068.49000	2	0	689.40308
+Mar 03, 2017 11:15:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	11693	2.43000	1070.92000	54	1	693.29723
+Mar 03, 2017 11:17:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	1327	2.29000	1073.21000	23	0	694.95770
+Mar 03, 2017 11:17:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	5020	4.62000	1077.83000	2	1	695.10338
+Mar 03, 2017 11:17:58 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	586	2.44000	1080.27000	5	0	695.46820
+Mar 03, 2017 11:18:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	2209	2.34000	1082.61000	1	0	695.54108
+Mar 03, 2017 11:18:33 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	1818	2.75000	1085.36000	7	0	696.05325
+Mar 03, 2017 11:21:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	312	2.23000	1087.59000	39	1	698.89245
+Mar 03, 2017 11:21:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	3649	2.16000	1089.75000	2	0	699.03807
+Mar 03, 2017 11:24:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	2178	2.45000	1092.20000	36	3	701.67733
+Mar 03, 2017 11:24:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	13328	2.33000	1094.53000	2	1	701.82453
+Mar 03, 2017 11:24:19 PM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	701m49.802s
+user	721m15.016s
+sys	0m45.564s
+Mar 03, 2017 11:24:20 PM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1487741310690
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1487741310690
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 03, 2017 11:24:20 PM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 03, 2017 11:24:20 PM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 03, 2017 11:24:21 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	129.75000
+Mar 03, 2017 11:34:40 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.14000
+Mar 03, 2017 11:38:30 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.37000
+Mar 03, 2017 11:41:11 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.43000
+Mar 03, 2017 11:43:05 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.39000
+Mar 03, 2017 11:44:46 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	163.68000
+Mar 03, 2017 11:46:34 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	182.56000
+Mar 03, 2017 11:48:33 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	42.75000
+Mar 03, 2017 11:50:00 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 03, 2017 11:51:25 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	93.02000
+Mar 03, 2017 11:52:49 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.21000
+Mar 03, 2017 11:53:50 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	40.71000
+Mar 03, 2017 11:55:07 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	9.85000
+Mar 03, 2017 11:56:04 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.54000
+Mar 03, 2017 11:56:46 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.86000
+Mar 03, 2017 11:57:31 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	2.48000
+Mar 03, 2017 11:57:40 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	644.18000	644.18000	15233	0	33.33193
+Mar 04, 2017 2:17:11 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	9994	35.42000	679.60000	2972	0	172.85143
+Mar 04, 2017 3:01:22 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	9278	18.75000	698.35000	901	0	217.04070
+Mar 04, 2017 3:06:51 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	131	17.84000	716.19000	107	0	222.51148
+Mar 04, 2017 3:36:48 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	13249	15.17000	731.36000	575	1	252.47365
+Mar 04, 2017 3:51:21 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	7860	12.67000	744.03000	272	0	267.02298
+Mar 04, 2017 4:30:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	639	9.87000	753.90000	733	10	306.60118
+Mar 04, 2017 4:38:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	559	8.96000	762.86000	145	0	314.53007
+Mar 04, 2017 5:02:07 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	66	8.35000	771.21000	421	4	337.78947
+Mar 04, 2017 5:06:08 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	1521	9.05000	780.26000	72	0	341.80088
+Mar 04, 2017 6:12:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	8450	5.24000	785.50000	1190	28	408.49515
+Mar 04, 2017 6:14:08 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	649	6.42000	791.92000	23	1	409.79387
+Mar 04, 2017 6:15:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	1827	6.17000	798.09000	26	2	411.27268
+Mar 04, 2017 6:16:07 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	989	6.84000	804.93000	9	0	411.78430
+Mar 04, 2017 6:27:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	535	5.07000	810.00000	200	11	423.27688
+Mar 04, 2017 6:31:57 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	6072	5.03000	815.03000	75	4	427.61558
+Mar 04, 2017 6:36:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	572	5.13000	820.16000	82	4	432.38755
+Mar 04, 2017 6:37:22 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	36	4.72000	824.88000	11	0	433.02918
+Mar 04, 2017 6:38:57 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	37	7.65000	832.53000	27	0	434.62203
+Mar 04, 2017 6:42:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	4280	5.10000	837.63000	67	7	438.59130
+Mar 04, 2017 6:54:10 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	349	5.27000	842.90000	189	11	449.82870
+Mar 04, 2017 6:56:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	6477	5.34000	848.24000	43	3	452.39897
+Mar 04, 2017 6:58:29 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	2682	4.97000	853.21000	29	1	454.14657
+Mar 04, 2017 6:58:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	2153	4.47000	857.68000	5	0	454.44900
+Mar 04, 2017 7:00:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	562	5.74000	863.42000	32	5	456.39355
+Mar 04, 2017 7:09:13 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	4824	5.54000	868.96000	139	9	464.87733
+Mar 04, 2017 7:13:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	76	4.00000	872.96000	76	9	469.53778
+Mar 04, 2017 7:15:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	5629	4.07000	877.03000	19	1	470.70548
+Mar 04, 2017 7:16:31 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	226	4.45000	881.48000	24	1	472.18993
+Mar 04, 2017 7:25:54 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	307	3.95000	885.43000	151	21	481.56967
+Mar 04, 2017 7:26:46 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	9774	4.40000	889.83000	14	0	482.44115
+Mar 04, 2017 7:44:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	412	4.91000	894.74000	283	30	500.13707
+Mar 04, 2017 7:45:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	110	4.59000	899.33000	13	1	500.95440
+Mar 04, 2017 7:53:45 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	1038	3.75000	903.08000	134	14	509.41763
+Mar 04, 2017 8:01:03 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	2879	3.35000	906.43000	115	13	516.71347
+Mar 04, 2017 8:02:00 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	236	3.49000	909.92000	15	2	517.66503
+Mar 04, 2017 8:03:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	140	4.02000	913.94000	25	8	519.26135
+Mar 04, 2017 8:04:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	741	4.58000	918.52000	15	1	520.22397
+Mar 04, 2017 8:04:57 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	5161	3.72000	922.24000	6	2	520.61035
+Mar 04, 2017 8:16:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	150	3.12000	925.36000	182	19	532.32393
+Mar 04, 2017 8:17:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	5020	3.29000	928.65000	12	0	533.10108
+Mar 04, 2017 8:17:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	2496	3.65000	932.30000	3	1	533.29618
+Mar 04, 2017 8:23:59 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	7295	3.51000	935.81000	98	9	539.65322
+Mar 04, 2017 8:24:58 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	2841	4.00000	939.81000	15	2	540.63188
+Mar 04, 2017 8:35:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	2462	2.94000	942.75000	162	21	551.23785
+Mar 04, 2017 8:36:21 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	7992	2.87000	945.62000	12	0	552.02190
+Mar 04, 2017 8:36:41 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	2283	3.44000	949.06000	5	0	552.35173
+Mar 04, 2017 8:37:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	13873	2.92000	951.98000	13	0	553.20908
+Mar 04, 2017 8:37:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	597	2.92000	954.90000	2	0	553.34122
+Mar 04, 2017 8:37:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	1524	2.87000	957.77000	1	0	553.40738
+Mar 04, 2017 8:38:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	1480	3.18000	960.95000	17	0	554.53457
+Mar 04, 2017 8:43:00 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	1370	4.09000	965.04000	62	7	558.66195
+Mar 04, 2017 8:43:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	754	3.76000	968.80000	8	0	559.19645
+Mar 04, 2017 8:46:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	3029	3.14000	971.94000	42	4	562.00780
+Mar 04, 2017 8:46:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	1159	3.37000	975.31000	3	0	562.20940
+Mar 04, 2017 8:46:45 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	3344	3.14000	978.45000	3	0	562.41230
+Mar 04, 2017 8:46:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	7720	3.14000	981.59000	1	0	562.47998
+Mar 04, 2017 8:47:54 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	1300	2.84000	984.43000	16	3	563.56073
+Mar 04, 2017 8:51:13 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	7854	2.75000	987.18000	49	4	566.87950
+Mar 04, 2017 8:53:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	638	3.48000	990.66000	36	3	569.32513
+Mar 04, 2017 8:53:48 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	941	3.19000	993.85000	2	0	569.46223
+Mar 04, 2017 8:55:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	563	2.94000	996.79000	31	2	571.58033
+Mar 04, 2017 8:56:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	6165	2.97000	999.76000	9	1	572.19963
+Mar 04, 2017 8:56:53 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	242	3.77000	1003.53000	5	0	572.54383
+Mar 04, 2017 8:59:46 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	12874	3.71000	1007.24000	42	5	575.43795
+Mar 04, 2017 8:59:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	2069	2.85000	1010.09000	2	0	575.57650
+Mar 04, 2017 9:03:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	1202	2.84000	1012.93000	51	6	579.09755
+Mar 04, 2017 9:06:54 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	4266	2.63000	1015.56000	50	6	582.56000
+Mar 04, 2017 9:07:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	4420	2.75000	1018.31000	7	1	583.04435
+Mar 04, 2017 9:09:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	985	3.11000	1021.42000	32	3	585.27035
+Mar 04, 2017 9:09:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	1434	2.58000	1024.00000	1	0	585.34020
+Mar 04, 2017 9:10:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	1327	3.86000	1027.86000	15	2	586.38338
+Mar 04, 2017 9:10:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	1528	2.70000	1030.56000	1	0	586.45377
+Mar 04, 2017 9:12:45 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	1312	2.94000	1033.50000	28	3	588.42183
+Mar 04, 2017 9:12:58 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	2269	2.63000	1036.13000	3	0	588.63297
+Mar 04, 2017 9:14:57 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	92	2.54000	1038.67000	28	0	590.60957
+Mar 04, 2017 9:15:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	2345	3.26000	1041.93000	10	0	591.31095
+Mar 04, 2017 9:18:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	5825	2.56000	1044.49000	40	6	594.13570
+Mar 04, 2017 9:26:11 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	1240	2.51000	1047.00000	109	14	601.85298
+Mar 04, 2017 9:30:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	4800	2.63000	1049.63000	54	2	605.69345
+Mar 04, 2017 9:31:19 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	1756	2.90000	1052.53000	18	3	606.97693
+Mar 04, 2017 9:36:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	814	2.67000	1055.20000	76	5	612.39422
+Mar 04, 2017 9:38:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	1599	3.19000	1058.39000	24	2	614.10608
+Mar 04, 2017 9:42:53 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	12259	2.41000	1060.80000	62	6	618.54907
+Mar 04, 2017 9:46:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	2906	2.57000	1063.37000	51	7	622.21302
+Mar 04, 2017 9:46:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	1728	2.41000	1065.78000	4	1	622.50062
+Mar 04, 2017 9:57:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	679	2.29000	1068.07000	142	12	632.73097
+Mar 04, 2017 10:01:10 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	2389	2.74000	1070.81000	57	6	636.83483
+Mar 04, 2017 10:04:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	6123	2.46000	1073.27000	40	3	639.72562
+Mar 04, 2017 10:06:09 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	1171	2.34000	1075.61000	29	2	641.82317
+Mar 04, 2017 10:07:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	6836	2.63000	1078.24000	20	3	643.27510
+Mar 04, 2017 10:07:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	8007	2.40000	1080.64000	3	1	643.49110
+Mar 04, 2017 10:07:54 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	8845	2.93000	1083.57000	1	0	643.56333
+Mar 04, 2017 10:08:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	1115	2.28000	1085.85000	10	0	644.29335
+Mar 04, 2017 10:09:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	4469	2.24000	1088.09000	6	0	644.73353
+Mar 04, 2017 10:09:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	305	2.33000	1090.42000	6	0	645.17207
+Mar 04, 2017 10:09:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	316	2.74000	1093.16000	1	0	645.24475
+Mar 04, 2017 10:09:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	3121	2.67000	1095.83000	1	0	645.31775
+Mar 04, 2017 10:10:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	7158	2.41000	1098.24000	11	0	646.12715
+Mar 04, 2017 10:14:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	2603	2.61000	1100.85000	54	5	650.10405
+Mar 04, 2017 10:14:26 AM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	650m6.873s
+user	667m49.900s
+sys	0m42.748s
+Mar 04, 2017 10:14:26 AM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1487851696510
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1487851696510
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 04, 2017 10:14:27 AM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 04, 2017 10:14:27 AM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 04, 2017 10:14:28 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	126.55000
+Mar 04, 2017 10:24:51 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.14000
+Mar 04, 2017 10:28:43 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.36000
+Mar 04, 2017 10:31:25 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.41000
+Mar 04, 2017 10:33:20 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.39000
+Mar 04, 2017 10:35:02 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	160.80000
+Mar 04, 2017 10:36:50 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	180.56000
+Mar 04, 2017 10:38:50 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	43.40000
+Mar 04, 2017 10:40:17 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 04, 2017 10:41:43 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	92.11000
+Mar 04, 2017 10:43:08 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.22000
+Mar 04, 2017 10:44:09 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	43.08000
+Mar 04, 2017 10:45:27 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	10.77000
+Mar 04, 2017 10:46:23 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.38000
+Mar 04, 2017 10:47:05 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.83000
+Mar 04, 2017 10:47:50 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	3.22000
+Mar 04, 2017 10:48:00 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	643.88000	643.88000	15233	0	33.54647
+Mar 04, 2017 1:08:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	11419	34.52000	678.40000	2983	0	174.30870
+Mar 04, 2017 1:49:22 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	624	19.31000	697.71000	825	0	214.91923
+Mar 04, 2017 1:57:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	9280	17.95000	715.66000	155	0	222.86895
+Mar 04, 2017 2:27:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	13251	14.70000	730.36000	570	20	252.72728
+Mar 04, 2017 2:41:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	7850	12.89000	743.25000	259	0	266.66413
+Mar 04, 2017 3:32:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	4824	8.99000	752.24000	941	3	317.79455
+Mar 04, 2017 3:40:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	639	8.95000	761.19000	142	1	325.62763
+Mar 04, 2017 3:43:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	66	9.13000	770.32000	56	1	328.73262
+Mar 04, 2017 3:58:18 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	649	7.81000	778.13000	271	2	343.84853
+Mar 04, 2017 4:01:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	192	7.53000	785.66000	49	1	346.59950
+Mar 04, 2017 4:02:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	8450	7.90000	793.56000	20	1	347.73705
+Mar 04, 2017 4:40:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	989	6.13000	799.69000	663	12	385.79638
+Mar 04, 2017 4:42:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	682	6.45000	806.14000	32	2	387.64715
+Mar 04, 2017 4:43:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	1102	6.22000	812.36000	21	1	388.86797
+Mar 04, 2017 5:05:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	559	5.49000	817.85000	384	13	411.30702
+Mar 04, 2017 5:34:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	885	4.82000	822.67000	491	28	440.13803
+Mar 04, 2017 5:39:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	37	5.62000	828.29000	85	3	445.16117
+Mar 04, 2017 5:49:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	4520	4.50000	832.79000	164	12	454.90762
+Mar 04, 2017 5:52:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	765	5.13000	837.92000	57	2	458.29863
+Mar 04, 2017 6:16:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	41	4.48000	842.40000	402	31	482.34298
+Mar 04, 2017 6:17:24 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	742	4.36000	846.76000	10	1	482.94512
+Mar 04, 2017 6:18:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	563	5.78000	852.54000	12	4	483.66718
+Mar 04, 2017 6:25:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	1827	3.87000	856.41000	129	10	491.47173
+Mar 04, 2017 6:26:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	3474	3.98000	860.39000	5	0	491.77778
+Mar 04, 2017 6:31:58 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	116	3.79000	864.18000	94	8	497.51592
+Mar 04, 2017 6:32:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	10234	4.20000	868.38000	10	1	498.13082
+Mar 04, 2017 6:33:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	3210	3.88000	872.26000	7	1	498.56278
+Mar 04, 2017 6:33:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	572	6.36000	878.62000	3	0	498.74655
+Mar 04, 2017 6:42:20 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	1987	3.73000	882.35000	147	15	507.87840
+Mar 04, 2017 6:42:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	2080	3.65000	886.00000	1	0	507.94038
+Mar 04, 2017 6:42:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	3524	4.39000	890.39000	1	0	508.00327
+Mar 04, 2017 6:57:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	2086	3.57000	893.96000	240	18	523.06163
+Mar 04, 2017 6:59:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	152	3.87000	897.83000	27	0	524.76680
+Mar 04, 2017 7:04:50 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	3978	3.34000	901.17000	89	12	530.39267
+Mar 04, 2017 7:05:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	2879	4.10000	905.27000	8	1	530.89993
+Mar 04, 2017 7:10:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	1171	3.39000	908.66000	73	8	535.54770
+Mar 04, 2017 7:12:18 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	122	3.23000	911.89000	36	4	537.85183
+Mar 04, 2017 7:12:22 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	145	3.41000	915.30000	1	0	537.91612
+Mar 04, 2017 7:12:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	1296	3.80000	919.10000	1	0	537.98063
+Mar 04, 2017 7:12:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	2133	3.52000	922.62000	1	0	538.04538
+Mar 04, 2017 7:13:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	536	3.48000	926.10000	10	4	538.69413
+Mar 04, 2017 7:13:28 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	2331	3.43000	929.53000	5	0	539.01922
+Mar 04, 2017 7:14:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	1740	3.74000	933.27000	18	1	540.18542
+Mar 04, 2017 7:18:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	2573	3.61000	936.88000	52	6	543.57798
+Mar 04, 2017 7:23:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	1423	3.37000	940.25000	84	15	549.06973
+Mar 04, 2017 7:23:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	1943	3.67000	943.92000	1	0	549.13537
+Mar 04, 2017 7:26:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	985	3.07000	946.99000	51	11	552.48680
+Mar 04, 2017 7:28:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	507	3.28000	950.27000	23	2	554.00242
+Mar 04, 2017 7:28:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	7295	5.57000	955.84000	4	0	554.26795
+Mar 04, 2017 7:38:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	349	3.80000	959.64000	147	17	564.05073
+Mar 04, 2017 7:38:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	1599	3.23000	962.87000	1	0	564.11787
+Mar 04, 2017 7:40:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	1202	3.11000	965.98000	34	2	566.39803
+Mar 04, 2017 7:41:39 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	1957	2.97000	968.95000	12	0	567.20625
+Mar 04, 2017 7:43:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	4579	3.56000	972.51000	33	6	569.42702
+Mar 04, 2017 7:45:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	6765	3.02000	975.53000	20	2	570.77643
+Mar 04, 2017 7:55:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	2600	2.93000	978.46000	148	19	580.75803
+Mar 04, 2017 8:35:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	8210	2.65000	981.11000	595	70	620.98643
+Mar 04, 2017 8:35:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	1242	3.02000	984.13000	6	3	621.39523
+Mar 04, 2017 8:35:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1529	2.92000	987.05000	1	0	621.46328
+Mar 04, 2017 8:36:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	3009	2.65000	989.70000	9	1	622.07937
+Mar 04, 2017 8:37:37 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	7417	3.01000	992.71000	16	1	623.17177
+Mar 04, 2017 8:40:46 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	2704	2.87000	995.58000	46	10	626.32172
+Mar 04, 2017 8:40:50 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	5020	3.11000	998.69000	1	0	626.38988
+Mar 04, 2017 8:41:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	10188	3.05000	1001.74000	3	1	626.59488
+Mar 04, 2017 8:43:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	2341	2.53000	1004.27000	29	2	628.59145
+Mar 04, 2017 8:46:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	23	2.60000	1006.87000	52	2	632.18713
+Mar 04, 2017 8:49:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	3649	2.69000	1009.56000	44	4	635.24100
+Mar 04, 2017 8:55:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	322	3.12000	1012.68000	87	9	641.26167
+Mar 04, 2017 8:56:20 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	9908	2.72000	1015.40000	9	2	641.88618
+Mar 04, 2017 8:56:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	5843	2.46000	1017.86000	8	2	642.44450
+Mar 04, 2017 8:58:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	4800	2.87000	1020.73000	16	7	643.55948
+Mar 04, 2017 8:58:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	10932	2.51000	1023.24000	2	1	643.69818
+Mar 04, 2017 8:58:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	12448	2.58000	1025.82000	1	1	643.76823
+Mar 04, 2017 8:59:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	2274	2.53000	1028.35000	12	0	644.60885
+Mar 04, 2017 9:00:28 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	5600	2.33000	1030.68000	20	5	646.01445
+Mar 04, 2017 9:03:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	1434	2.32000	1033.00000	36	2	648.55003
+Mar 04, 2017 9:03:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	1472	2.52000	1035.52000	1	0	648.62057
+Mar 04, 2017 9:03:17 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	2846	3.59000	1039.11000	3	1	648.83245
+Mar 04, 2017 9:03:25 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	255	3.23000	1042.34000	2	0	648.97445
+Mar 04, 2017 9:03:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	1617	2.72000	1045.06000	2	0	649.11702
+Mar 04, 2017 9:04:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	15062	2.77000	1047.83000	18	0	650.39833
+Mar 04, 2017 9:04:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	63	2.74000	1050.57000	1	0	650.46985
+Mar 04, 2017 9:05:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	3847	2.33000	1052.90000	2	1	650.61347
+Mar 04, 2017 9:05:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	4913	2.38000	1055.28000	1	0	650.68568
+Mar 04, 2017 9:05:17 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	303	3.97000	1059.25000	2	0	650.82928
+Mar 04, 2017 9:05:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	1690	3.38000	1062.63000	1	0	650.90140
+Mar 04, 2017 9:06:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	5658	2.38000	1065.01000	15	2	651.98132
+Mar 04, 2017 9:11:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	76	2.40000	1067.41000	66	7	656.74720
+Mar 04, 2017 9:11:20 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	877	2.47000	1069.88000	2	0	656.89210
+Mar 04, 2017 9:14:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	4860	2.39000	1072.27000	45	7	660.14283
+Mar 04, 2017 9:15:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	8675	2.36000	1074.63000	8	1	660.72170
+Mar 04, 2017 9:21:59 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	7163	2.52000	1077.15000	94	17	667.53868
+Mar 04, 2017 9:30:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	2682	2.22000	1079.37000	119	13	676.17825
+Mar 04, 2017 9:31:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	2646	2.27000	1081.64000	6	2	676.61425
+Mar 04, 2017 9:33:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	7835	2.22000	1083.86000	29	1	678.72622
+Mar 04, 2017 9:38:39 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	3138	2.36000	1086.22000	75	9	684.20648
+Mar 04, 2017 9:38:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	4799	2.57000	1088.79000	2	0	684.35325
+Mar 04, 2017 9:40:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	3449	2.12000	1090.91000	29	4	686.48043
+Mar 04, 2017 9:41:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	1312	2.45000	1093.36000	9	3	687.14368
+Mar 04, 2017 9:41:35 PM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	687m9.188s
+user	706m19.216s
+sys	0m44.048s
+Mar 04, 2017 9:41:36 PM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1487868673248
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1487868673248
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 04, 2017 9:41:36 PM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 04, 2017 9:41:36 PM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 04, 2017 9:41:37 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	127.30000
+Mar 04, 2017 9:51:58 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.13000
+Mar 04, 2017 9:55:49 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.37000
+Mar 04, 2017 9:58:30 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.44000
+Mar 04, 2017 10:00:25 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.39000
+Mar 04, 2017 10:02:06 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	163.09000
+Mar 04, 2017 10:03:55 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	185.31000
+Mar 04, 2017 10:05:54 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	42.30000
+Mar 04, 2017 10:07:21 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 04, 2017 10:08:46 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	94.12000
+Mar 04, 2017 10:10:11 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.22000
+Mar 04, 2017 10:11:11 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	42.20000
+Mar 04, 2017 10:12:28 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	9.93000
+Mar 04, 2017 10:13:25 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.43000
+Mar 04, 2017 10:14:07 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.80000
+Mar 04, 2017 10:14:52 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	2.65000
+Mar 04, 2017 10:15:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	647.71000	647.71000	15233	0	33.42377
+Mar 05, 2017 12:37:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	11425	32.90000	680.61000	3024	0	176.01257
+Mar 05, 2017 1:20:29 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	9284	18.68000	699.29000	874	1	218.88818
+Mar 05, 2017 1:31:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	266	16.14000	715.43000	215	0	229.86108
+Mar 05, 2017 1:39:11 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	3138	15.51000	730.94000	148	25	237.58508
+Mar 05, 2017 1:45:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	13256	14.33000	745.27000	110	15	243.43995
+Mar 05, 2017 2:35:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	66	8.72000	753.99000	926	56	293.78303
+Mar 05, 2017 2:37:41 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	639	9.72000	763.71000	42	0	296.09173
+Mar 05, 2017 2:43:11 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	1292	7.86000	771.57000	99	0	301.58958
+Mar 05, 2017 2:48:15 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	192	8.52000	780.09000	90	0	306.64303
+Mar 05, 2017 3:02:29 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	682	6.60000	786.69000	252	2	320.88043
+Mar 05, 2017 3:05:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	5629	6.53000	793.22000	52	0	323.83102
+Mar 05, 2017 3:09:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	989	6.61000	799.83000	69	0	327.77685
+Mar 05, 2017 3:15:07 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	37	5.96000	805.79000	100	4	333.52355
+Mar 05, 2017 3:18:12 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	3210	6.04000	811.83000	53	0	336.59520
+Mar 05, 2017 3:18:22 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	4824	6.81000	818.64000	3	0	336.77133
+Mar 05, 2017 3:24:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	2409	5.46000	824.10000	106	3	342.99693
+Mar 05, 2017 4:57:21 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	4854	5.80000	829.90000	220	7	435.75832
+Mar 05, 2017 5:28:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	5000	4.18000	834.08000	521	23	466.62800
+Mar 05, 2017 5:31:58 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	111	4.22000	838.30000	63	4	470.37272
+Mar 05, 2017 5:33:06 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	754	4.33000	842.63000	19	1	471.50917
+Mar 05, 2017 5:33:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	307	4.22000	846.85000	10	1	472.11003
+Mar 05, 2017 5:33:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	4579	4.44000	851.29000	2	1	472.23075
+Mar 05, 2017 5:36:22 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	885	4.13000	855.42000	42	1	474.77530
+Mar 05, 2017 5:36:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	349	4.20000	859.62000	9	1	475.32127
+Mar 05, 2017 5:37:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	1955	4.35000	863.97000	13	0	476.11610
+Mar 05, 2017 5:37:54 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	741	4.48000	868.45000	3	1	476.30020
+Mar 05, 2017 5:37:58 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	985	3.91000	872.36000	1	1	476.36190
+Mar 05, 2017 5:38:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	6477	4.92000	877.28000	5	0	476.67212
+Mar 05, 2017 5:40:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	8931	3.70000	880.98000	34	1	478.78823
+Mar 05, 2017 5:40:53 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	186	3.84000	884.82000	8	0	479.28253
+Mar 05, 2017 5:41:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	6754	3.85000	888.67000	15	0	480.22020
+Mar 05, 2017 5:42:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	150	4.16000	892.83000	12	0	480.97345
+Mar 05, 2017 5:48:41 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	8450	4.52000	897.35000	97	6	487.07863
+Mar 05, 2017 5:57:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	422	3.59000	900.94000	142	11	496.06388
+Mar 05, 2017 5:58:03 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	9775	3.74000	904.68000	6	1	496.44652
+Mar 05, 2017 5:58:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	572	3.70000	908.38000	3	0	496.63722
+Mar 05, 2017 5:58:18 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	3212	4.14000	912.52000	1	0	496.70088
+Mar 05, 2017 5:58:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	2817	3.46000	915.98000	8	1	497.21462
+Mar 05, 2017 5:59:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	1520	4.30000	920.28000	8	1	497.72830
+Mar 05, 2017 5:59:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	2133	4.66000	924.94000	4	0	497.98607
+Mar 05, 2017 6:04:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	412	3.90000	928.84000	81	2	503.23142
+Mar 05, 2017 6:08:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	36	3.37000	932.21000	54	3	506.73087
+Mar 05, 2017 6:10:41 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	2573	3.31000	935.52000	36	1	509.07968
+Mar 05, 2017 6:10:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	590	3.36000	938.88000	4	0	509.34127
+Mar 05, 2017 6:11:00 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	861	5.13000	944.01000	1	0	509.40643
+Mar 05, 2017 6:11:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	1987	3.34000	947.35000	1	0	509.47188
+Mar 05, 2017 6:11:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	2787	3.95000	951.30000	4	0	509.73558
+Mar 05, 2017 6:19:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	1202	3.24000	954.54000	123	7	517.87157
+Mar 05, 2017 6:20:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	2019	3.49000	958.03000	12	3	518.66697
+Mar 05, 2017 6:21:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	2463	3.53000	961.56000	24	1	520.26395
+Mar 05, 2017 6:24:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	3354	2.98000	964.54000	38	3	522.80155
+Mar 05, 2017 6:29:13 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	2183	3.55000	968.09000	72	6	527.62570
+Mar 05, 2017 6:42:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	721	2.75000	970.84000	200	11	541.03738
+Mar 05, 2017 6:46:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	1617	3.58000	974.42000	56	1	544.79512
+Mar 05, 2017 6:49:01 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	1599	3.28000	977.70000	39	3	547.42213
+Mar 05, 2017 6:49:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	2774	2.91000	980.61000	7	0	547.89808
+Mar 05, 2017 6:49:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	3827	2.71000	983.32000	1	0	547.96610
+Mar 05, 2017 6:49:46 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	11693	2.92000	986.24000	3	0	548.16865
+Mar 05, 2017 6:50:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1238	3.33000	989.57000	17	1	549.32140
+Mar 05, 2017 6:51:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	12051	2.80000	992.37000	12	0	550.14073
+Mar 05, 2017 6:53:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	1037	2.99000	995.36000	31	6	552.26418
+Mar 05, 2017 6:57:01 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	1312	3.05000	998.41000	46	7	555.41490
+Mar 05, 2017 6:57:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	2885	2.69000	1001.10000	6	2	555.82797
+Mar 05, 2017 6:58:03 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	152	3.33000	1004.43000	9	0	556.44820
+Mar 05, 2017 7:03:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	7848	3.06000	1007.49000	81	4	562.03970
+Mar 05, 2017 7:09:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	41	2.80000	1010.29000	81	7	567.64203
+Mar 05, 2017 7:09:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	3650	3.30000	1013.59000	5	0	567.98980
+Mar 05, 2017 7:10:42 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	793	3.00000	1016.59000	16	1	569.09832
+Mar 05, 2017 7:11:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	2345	3.15000	1019.74000	10	1	569.79607
+Mar 05, 2017 7:12:10 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	92	3.01000	1022.75000	11	0	570.56655
+Mar 05, 2017 7:12:48 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	5892	2.86000	1025.61000	9	1	571.19752
+Mar 05, 2017 7:14:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	866	2.69000	1028.30000	23	2	572.80617
+Mar 05, 2017 7:15:19 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	5591	2.76000	1031.06000	13	3	573.72045
+Mar 05, 2017 7:15:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	236	3.06000	1034.12000	7	0	574.21297
+Mar 05, 2017 7:17:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	6072	2.90000	1037.02000	20	0	575.62827
+Mar 05, 2017 7:17:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	13252	3.19000	1040.21000	3	0	575.83983
+Mar 05, 2017 7:18:00 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	6349	2.68000	1042.89000	8	0	576.40787
+Mar 05, 2017 7:19:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	1640	3.30000	1046.19000	20	2	577.83468
+Mar 05, 2017 7:30:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	3120	2.37000	1048.56000	160	11	589.22568
+Mar 05, 2017 7:44:10 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	5020	2.68000	1051.24000	187	8	602.56678
+Mar 05, 2017 7:44:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	6362	2.43000	1053.67000	1	0	602.63868
+Mar 05, 2017 7:44:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	381	2.58000	1056.25000	5	0	602.99853
+Mar 05, 2017 7:44:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	2233	2.64000	1058.89000	2	1	603.14105
+Mar 05, 2017 7:44:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	3099	2.59000	1061.48000	1	0	603.21227
+Mar 05, 2017 7:45:58 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	2331	2.50000	1063.98000	16	2	604.36330
+Mar 05, 2017 7:46:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	4181	2.47000	1066.45000	6	1	604.79752
+Mar 05, 2017 7:46:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	4997	2.81000	1069.26000	1	0	604.86987
+Mar 05, 2017 7:46:45 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	674	2.31000	1071.57000	4	1	605.15955
+Mar 05, 2017 7:47:12 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	2997	2.98000	1074.55000	6	0	605.59485
+Mar 05, 2017 7:47:51 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	367	2.36000	1076.91000	9	0	606.24635
+Mar 05, 2017 7:48:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	3789	2.27000	1079.18000	6	2	606.68307
+Mar 05, 2017 7:48:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	10098	2.40000	1081.58000	2	1	606.82948
+Mar 05, 2017 7:48:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	124	2.72000	1084.30000	1	0	606.90258
+Mar 05, 2017 7:48:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	242	3.05000	1087.35000	1	0	606.97648
+Mar 05, 2017 7:48:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	244	2.97000	1090.32000	1	0	607.05027
+Mar 05, 2017 7:48:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	393	2.77000	1093.09000	1	0	607.12387
+Mar 05, 2017 7:49:10 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	1729	2.43000	1095.52000	6	0	607.56245
+Mar 05, 2017 7:52:15 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	604	2.23000	1097.75000	42	1	610.65882
+Mar 05, 2017 7:52:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	1464	2.71000	1100.46000	2	0	610.80613
+Mar 05, 2017 7:52:24 AM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	610m48.857s
+user	545m15.732s
+sys	0m34.216s
+Mar 05, 2017 7:52:24 AM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1487923818091
+Mar 05, 2017 7:52:24 AM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 05, 2017 7:52:24 AM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 05, 2017 7:52:24 AM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 05, 2017 7:52:24 AM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 05, 2017 7:52:24 AM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 05, 2017 7:52:24 AM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 05, 2017 7:52:24 AM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1487923818091
+Mar 05, 2017 7:52:25 AM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 05, 2017 7:52:25 AM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 05, 2017 7:52:25 AM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 05, 2017 7:52:25 AM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 05, 2017 7:52:25 AM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 05, 2017 7:52:26 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	126.91000
+Mar 05, 2017 8:02:45 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.13000
+Mar 05, 2017 8:06:36 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.36000
+Mar 05, 2017 8:09:17 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.42000
+Mar 05, 2017 8:11:11 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.39000
+Mar 05, 2017 8:12:53 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	163.69000
+Mar 05, 2017 8:14:41 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	185.89000
+Mar 05, 2017 8:16:40 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	41.38000
+Mar 05, 2017 8:18:07 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 05, 2017 8:19:32 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	89.80000
+Mar 05, 2017 8:20:54 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.22000
+Mar 05, 2017 8:21:53 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	40.20000
+Mar 05, 2017 8:23:10 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	10.88000
+Mar 05, 2017 8:24:07 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.46000
+Mar 05, 2017 8:24:49 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.85000
+Mar 05, 2017 8:25:34 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	3.72000
+Mar 05, 2017 8:25:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	644.49000	644.49000	15233	0	33.30125
+Mar 05, 2017 10:45:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	9994	37.03000	681.52000	2972	0	173.22713
+Mar 05, 2017 11:37:57 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	9265	17.41000	698.93000	1059	0	225.54162
+Mar 05, 2017 11:41:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	639	17.79000	716.72000	70	1	229.15518
+Mar 05, 2017 12:05:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	3597	14.08000	730.80000	460	21	253.22077
+Mar 05, 2017 12:06:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	13245	15.04000	745.84000	9	0	253.70513
+Mar 05, 2017 12:49:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	562	10.34000	756.18000	788	10	296.58802
+Mar 05, 2017 12:56:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	236	10.80000	766.98000	142	0	304.42875
+Mar 05, 2017 1:52:58 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	559	6.96000	773.94000	1010	1	360.55027
+Mar 05, 2017 2:05:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	192	6.79000	780.73000	218	2	372.74427
+Mar 05, 2017 2:06:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	128	7.09000	787.82000	15	1	373.59057
+Mar 05, 2017 2:26:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	1292	6.58000	794.40000	365	3	394.36150
+Mar 05, 2017 2:32:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	37	6.11000	800.51000	99	2	400.02523
+Mar 05, 2017 2:55:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	5629	5.24000	805.75000	408	8	423.47360
+Mar 05, 2017 2:58:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	682	6.46000	812.21000	39	1	425.72802
+Mar 05, 2017 3:03:16 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	1957	5.07000	817.28000	88	1	430.85490
+Mar 05, 2017 3:04:05 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	66	5.36000	822.64000	14	2	431.67547
+Mar 05, 2017 3:08:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	572	6.00000	828.64000	75	0	436.09427
+Mar 05, 2017 3:10:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	861	4.92000	833.56000	40	2	438.46178
+Mar 05, 2017 3:24:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	412	4.98000	838.54000	232	4	452.26210
+Mar 05, 2017 3:26:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	2748	4.57000	843.11000	32	0	454.17825
+Mar 05, 2017 3:26:39 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	1238	5.30000	848.41000	1	0	454.23815
+Mar 05, 2017 3:58:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	307	3.97000	852.38000	526	6	485.94292
+Mar 05, 2017 3:58:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	545	4.28000	856.66000	2	1	486.06390
+Mar 05, 2017 3:59:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	1841	4.87000	861.53000	12	1	486.79558
+Mar 05, 2017 4:02:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	4280	4.03000	865.56000	57	1	490.26702
+Mar 05, 2017 4:02:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	8450	3.96000	869.52000	2	0	490.38992
+Mar 05, 2017 4:05:05 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	230	4.75000	874.27000	37	0	492.66940
+Mar 05, 2017 4:24:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	989	3.54000	877.81000	308	252	511.69850
+Mar 05, 2017 4:24:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	1338	3.82000	881.63000	6	11	512.07162
+Mar 05, 2017 4:25:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	4228	4.32000	885.95000	16	12	513.06910
+Mar 05, 2017 4:30:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	2462	3.30000	889.25000	76	49	517.81568
+Mar 05, 2017 4:30:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	6169	3.25000	892.50000	6	2	518.19078
+Mar 05, 2017 4:30:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	1617	3.97000	896.47000	3	1	518.37902
+Mar 05, 2017 4:31:18 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	10106	3.50000	899.97000	8	9	518.88435
+Mar 05, 2017 4:31:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	1521	3.98000	903.95000	6	1	519.26435
+Mar 05, 2017 4:31:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	4854	3.46000	907.41000	2	1	519.39078
+Mar 05, 2017 4:31:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	8378	3.49000	910.90000	1	0	519.45387
+Mar 05, 2017 4:33:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	4523	3.45000	914.35000	20	12	520.72835
+Mar 05, 2017 4:37:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	36	3.00000	917.35000	64	31	524.82735
+Mar 05, 2017 4:37:18 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	646	3.12000	920.47000	1	0	524.89097
+Mar 05, 2017 4:37:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	2283	3.64000	924.11000	2	2	525.01978
+Mar 05, 2017 4:37:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	7590	3.35000	927.46000	8	4	525.53502
+Mar 05, 2017 4:39:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	4944	3.31000	930.77000	30	14	527.48083
+Mar 05, 2017 4:40:25 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	885	3.38000	934.15000	8	0	528.00117
+Mar 05, 2017 4:43:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	393	3.48000	937.63000	51	16	531.31715
+Mar 05, 2017 4:45:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	13876	3.37000	941.00000	23	12	532.82115
+Mar 05, 2017 4:49:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	23	3.89000	944.89000	59	19	536.68542
+Mar 05, 2017 4:50:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	423	3.30000	948.19000	16	1	537.73500
+Mar 05, 2017 4:56:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	8210	2.96000	951.15000	94	30	543.93238
+Mar 05, 2017 4:58:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	1537	2.85000	954.00000	30	5	545.90888
+Mar 05, 2017 4:59:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	7810	3.20000	957.20000	15	2	546.90298
+Mar 05, 2017 4:59:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	51	3.10000	960.30000	4	0	547.16983
+Mar 05, 2017 4:59:39 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	1221	3.54000	963.84000	1	0	547.23658
+Mar 05, 2017 5:00:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	4151	3.15000	966.99000	18	9	548.44122
+Mar 05, 2017 5:00:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	9771	4.37000	971.36000	1	0	548.50840
+Mar 05, 2017 5:01:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	4416	2.87000	974.23000	3	0	548.70975
+Mar 05, 2017 5:08:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	120	2.56000	976.79000	103	26	555.63582
+Mar 05, 2017 5:08:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	850	3.32000	980.11000	5	3	555.97073
+Mar 05, 2017 5:11:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1635	3.35000	983.46000	47	5	559.14687
+Mar 05, 2017 5:12:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	3210	3.18000	986.64000	9	6	559.75890
+Mar 05, 2017 5:13:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	5413	2.88000	989.52000	21	5	561.18722
+Mar 05, 2017 5:13:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	8346	2.54000	992.06000	2	0	561.32378
+Mar 05, 2017 5:14:50 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	2247	3.32000	995.38000	16	3	562.41697
+Mar 05, 2017 5:15:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	1520	3.40000	998.78000	11	2	563.17237
+Mar 05, 2017 5:15:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	3027	2.98000	1001.76000	2	0	563.30980
+Mar 05, 2017 5:15:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	7940	2.47000	1004.23000	2	2	563.44760
+Mar 05, 2017 5:16:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	5828	2.71000	1006.94000	5	3	563.79058
+Mar 05, 2017 5:19:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	1987	2.76000	1009.70000	43	10	566.75880
+Mar 05, 2017 5:19:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	3827	2.89000	1012.59000	1	0	566.82828
+Mar 05, 2017 5:20:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	1044	2.83000	1015.42000	16	2	567.94147
+Mar 05, 2017 5:20:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	5996	2.64000	1018.06000	4	3	568.21863
+Mar 05, 2017 5:20:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	2506	2.81000	1020.87000	4	1	568.49677
+Mar 05, 2017 5:21:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	4388	2.50000	1023.37000	5	0	568.84290
+Mar 05, 2017 5:21:20 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	122	3.01000	1026.38000	1	0	568.91293
+Mar 05, 2017 5:21:24 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	4585	2.83000	1029.21000	1	1	568.98297
+Mar 05, 2017 5:21:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	4525	2.67000	1031.88000	8	2	569.54392
+Mar 05, 2017 5:28:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	1038	2.45000	1034.33000	86	23	575.59740
+Mar 05, 2017 5:28:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	5450	2.37000	1036.70000	3	1	575.80927
+Mar 05, 2017 5:29:17 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	14924	2.46000	1039.16000	15	1	576.86837
+Mar 05, 2017 5:29:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	4800	2.90000	1042.06000	5	0	577.22183
+Mar 05, 2017 5:29:42 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	468	2.66000	1044.72000	1	0	577.29317
+Mar 05, 2017 5:29:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	1599	2.77000	1047.49000	1	0	577.36455
+Mar 05, 2017 5:29:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	4142	3.06000	1050.55000	1	0	577.43600
+Mar 05, 2017 5:31:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	2846	2.87000	1053.42000	18	2	578.72332
+Mar 05, 2017 5:31:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	7862	3.10000	1056.52000	1	1	578.79528
+Mar 05, 2017 5:31:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	6603	2.42000	1058.94000	5	0	579.15420
+Mar 05, 2017 5:32:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	843	2.70000	1061.64000	9	1	579.79993
+Mar 05, 2017 5:33:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	12261	2.55000	1064.19000	11	0	580.58903
+Mar 05, 2017 5:34:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	76	2.63000	1066.82000	20	5	582.03063
+Mar 05, 2017 5:34:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	9908	2.91000	1069.73000	5	2	582.39213
+Mar 05, 2017 5:35:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	5946	2.41000	1072.14000	4	0	582.68115
+Mar 05, 2017 5:35:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	41	3.93000	1076.07000	6	0	583.11397
+Mar 05, 2017 5:35:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	340	2.47000	1078.54000	1	0	583.18635
+Mar 05, 2017 5:35:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	688	2.91000	1081.45000	4	2	583.47868
+Mar 05, 2017 5:36:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	4860	2.53000	1083.98000	2	0	583.62398
+Mar 05, 2017 5:37:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	1171	2.59000	1086.57000	14	0	584.64443
+Mar 05, 2017 5:37:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	9679	3.18000	1089.75000	2	4	584.79157
+Mar 05, 2017 5:38:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	1946	3.44000	1093.19000	14	0	585.82098
+Mar 05, 2017 5:38:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	4896	2.54000	1095.73000	3	1	586.04202
+Mar 05, 2017 5:38:27 PM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	586m3.056s
+user	601m47.316s
+sys	0m37.212s
+Mar 05, 2017 5:38:28 PM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1488034002257
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1488034002257
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 05, 2017 5:38:28 PM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 05, 2017 5:38:28 PM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 05, 2017 5:38:29 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	129.90000
+Mar 05, 2017 5:48:47 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.13000
+Mar 05, 2017 5:52:37 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.36000
+Mar 05, 2017 5:55:18 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.42000
+Mar 05, 2017 5:57:12 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.37000
+Mar 05, 2017 5:58:54 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	163.73000
+Mar 05, 2017 6:00:42 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	177.71000
+Mar 05, 2017 6:02:41 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	43.22000
+Mar 05, 2017 6:04:08 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.21000
+Mar 05, 2017 6:05:33 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	93.68000
+Mar 05, 2017 6:06:57 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.21000
+Mar 05, 2017 6:07:58 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	40.27000
+Mar 05, 2017 6:09:15 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	10.08000
+Mar 05, 2017 6:10:11 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.54000
+Mar 05, 2017 6:10:53 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.86000
+Mar 05, 2017 6:11:38 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	3.00000
+Mar 05, 2017 6:11:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	644.88000	644.88000	15233	0	33.31823
+Mar 05, 2017 8:32:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	11408	33.92000	678.80000	2982	0	173.56852
+Mar 05, 2017 9:12:05 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	267	19.24000	698.04000	817	0	213.61850
+Mar 05, 2017 9:19:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	9284	17.80000	715.84000	153	18	221.46180
+Mar 05, 2017 9:39:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	3138	14.23000	730.07000	374	128	240.96192
+Mar 05, 2017 9:39:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	13247	14.45000	744.52000	8	2	241.38712
+Mar 05, 2017 10:11:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	639	9.30000	753.82000	595	401	273.44767
+Mar 05, 2017 10:17:20 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	4824	8.93000	762.75000	99	110	278.86965
+Mar 05, 2017 10:22:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	66	8.65000	771.40000	88	118	283.72937
+Mar 05, 2017 10:22:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	559	8.08000	779.48000	11	21	284.34110
+Mar 05, 2017 10:25:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	192	7.52000	787.00000	42	70	286.70575
+Mar 05, 2017 10:33:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	682	6.60000	793.60000	142	189	294.76433
+Mar 05, 2017 10:38:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	4518	6.01000	799.61000	96	178	300.24928
+Mar 05, 2017 10:40:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	37	7.03000	806.64000	39	59	302.49390
+Mar 05, 2017 10:41:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	307	5.78000	812.42000	9	17	303.01592
+Mar 05, 2017 10:45:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	885	5.38000	817.80000	75	124	307.38578
+Mar 05, 2017 10:46:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	3210	5.49000	823.29000	8	14	307.85210
+Mar 05, 2017 10:51:37 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	8450	5.04000	828.33000	90	114	313.15008
+Mar 05, 2017 10:56:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	989	5.36000	833.69000	84	70	318.12460
+Mar 05, 2017 11:03:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	2462	5.57000	839.26000	110	122	324.67105
+Mar 05, 2017 11:07:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	649	4.34000	843.60000	66	80	328.60680
+Mar 05, 2017 11:08:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	41	5.03000	848.63000	28	29	330.29075
+Mar 05, 2017 11:08:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	412	6.06000	854.69000	2	4	330.41118
+Mar 05, 2017 11:10:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	1103	5.00000	859.69000	26	26	331.98547
+Mar 05, 2017 11:12:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	145	4.62000	864.31000	35	29	334.12023
+Mar 05, 2017 11:13:16 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	1987	4.74000	869.05000	11	12	334.79687
+Mar 05, 2017 11:13:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	1617	4.66000	873.71000	2	2	334.92055
+Mar 05, 2017 11:13:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	1520	4.41000	878.12000	3	2	335.10638
+Mar 05, 2017 11:15:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	2283	4.07000	882.19000	28	23	336.84485
+Mar 05, 2017 11:16:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	688	4.55000	886.74000	13	14	337.65863
+Mar 05, 2017 11:29:42 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	1957	3.93000	890.67000	217	183	351.23332
+Mar 05, 2017 11:30:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	1827	4.21000	894.88000	15	10	352.17295
+Mar 05, 2017 11:30:46 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	4141	3.64000	898.52000	2	0	352.29918
+Mar 05, 2017 11:30:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	2964	3.73000	902.25000	2	1	352.42575
+Mar 05, 2017 11:31:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	6477	3.63000	905.88000	11	11	353.12385
+Mar 05, 2017 11:31:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	3247	3.73000	909.61000	2	2	353.25187
+Mar 05, 2017 11:32:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	1159	4.00000	913.61000	12	7	354.01812
+Mar 05, 2017 11:32:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	151	4.84000	918.45000	6	5	354.40348
+Mar 05, 2017 11:33:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	572	5.15000	923.60000	9	5	354.98282
+Mar 05, 2017 11:38:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	3696	3.95000	927.55000	71	52	359.57133
+Mar 05, 2017 11:45:33 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	6638	3.43000	930.98000	116	59	367.08110
+Mar 05, 2017 11:47:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	791	4.01000	934.99000	30	9	369.03100
+Mar 05, 2017 11:48:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	1156	3.73000	938.72000	8	7	369.55253
+Mar 05, 2017 11:50:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	3212	3.23000	941.95000	38	20	372.03630
+Mar 05, 2017 11:54:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	224	3.59000	945.54000	60	25	375.97698
+Mar 05, 2017 11:55:37 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	884	3.71000	949.25000	18	7	377.16060
+Mar 05, 2017 11:58:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	590	4.20000	953.45000	50	30	380.46733
+Mar 06, 2017 12:01:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	3770	3.24000	956.69000	40	15	383.11632
+Mar 06, 2017 12:02:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	1312	3.91000	960.60000	12	4	383.91367
+Mar 06, 2017 12:02:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	1413	3.58000	964.18000	4	0	384.18087
+Mar 06, 2017 12:03:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	7295	3.48000	967.66000	19	8	385.45140
+Mar 06, 2017 12:03:59 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	7862	3.15000	970.81000	1	0	385.51818
+Mar 06, 2017 12:06:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	942	2.95000	973.76000	44	29	388.47757
+Mar 06, 2017 12:08:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	1635	3.71000	977.47000	24	9	390.09767
+Mar 06, 2017 12:09:18 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	9773	3.09000	980.56000	11	0	390.84185
+Mar 06, 2017 12:09:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	5176	3.62000	984.18000	4	7	391.11300
+Mar 06, 2017 12:10:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	2626	3.51000	987.69000	20	6	392.47348
+Mar 06, 2017 12:12:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	13874	3.42000	991.11000	22	7	393.97123
+Mar 06, 2017 12:27:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	122	2.75000	993.86000	222	61	409.08015
+Mar 06, 2017 12:28:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	10234	3.01000	996.87000	15	5	410.10837
+Mar 06, 2017 12:33:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	6072	3.00000	999.87000	78	23	415.45632
+Mar 06, 2017 12:34:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	11693	3.48000	1003.35000	7	0	415.93763
+Mar 06, 2017 12:34:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	89	2.99000	1006.34000	2	0	416.07588
+Mar 06, 2017 12:34:57 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	3906	2.94000	1009.28000	6	2	416.48940
+Mar 06, 2017 12:35:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	6123	2.78000	1012.06000	12	4	417.32123
+Mar 06, 2017 12:37:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	92	3.37000	1015.43000	23	6	418.91620
+Mar 06, 2017 12:53:22 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	4421	2.52000	1017.95000	230	49	434.90257
+Mar 06, 2017 12:55:19 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	72	2.89000	1020.84000	28	5	436.85483
+Mar 06, 2017 1:08:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	2274	2.41000	1023.25000	185	37	449.76695
+Mar 06, 2017 1:08:31 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	5922	2.51000	1025.76000	4	0	450.04800
+Mar 06, 2017 1:11:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	7663	2.66000	1028.42000	44	8	453.13227
+Mar 06, 2017 1:34:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	1153	2.59000	1031.01000	328	70	476.15020
+Mar 06, 2017 1:48:53 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	2603	2.70000	1033.71000	203	37	490.41165
+Mar 06, 2017 1:49:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	5413	2.21000	1035.92000	5	0	490.76455
+Mar 06, 2017 1:51:25 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	1171	3.40000	1039.32000	31	5	492.95533
+Mar 06, 2017 1:52:08 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	2494	3.06000	1042.38000	10	4	493.66470
+Mar 06, 2017 1:53:07 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	721	3.40000	1045.78000	14	0	494.66015
+Mar 06, 2017 1:53:12 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	739	2.59000	1048.37000	1	0	494.73145
+Mar 06, 2017 1:55:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	194	2.27000	1050.64000	29	4	496.79705
+Mar 06, 2017 1:55:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	1549	2.18000	1052.82000	4	0	497.08383
+Mar 06, 2017 1:55:59 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	4913	3.73000	1056.55000	6	1	497.51308
+Mar 06, 2017 1:56:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	11651	2.28000	1058.83000	4	0	497.80088
+Mar 06, 2017 2:01:00 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	3309	2.39000	1061.22000	66	10	502.53672
+Mar 06, 2017 2:01:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	2654	2.13000	1063.35000	9	1	503.17843
+Mar 06, 2017 2:02:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	6170	2.14000	1065.49000	9	0	503.82568
+Mar 06, 2017 2:02:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	545	2.38000	1067.87000	8	0	504.40278
+Mar 06, 2017 2:03:05 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	1467	2.19000	1070.06000	3	0	504.62023
+Mar 06, 2017 2:03:31 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	5306	2.33000	1072.39000	6	0	505.05353
+Mar 06, 2017 2:03:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	8228	2.52000	1074.91000	2	0	505.19873
+Mar 06, 2017 2:07:08 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	6271	2.76000	1077.67000	48	2	508.67077
+Mar 06, 2017 2:07:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	7299	2.23000	1079.90000	2	0	508.81633
+Mar 06, 2017 2:07:21 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	487	2.07000	1081.97000	1	1	508.88925
+Mar 06, 2017 2:08:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	5824	2.07000	1084.04000	17	5	510.12818
+Mar 06, 2017 2:09:11 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	632	2.81000	1086.85000	8	0	510.71282
+Mar 06, 2017 2:10:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	818	2.07000	1088.92000	18	2	512.03027
+Mar 06, 2017 2:14:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	804	2.15000	1091.07000	58	6	516.27027
+Mar 06, 2017 2:21:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	1515	2.36000	1093.43000	93	21	523.08182
+Mar 06, 2017 2:21:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	2229	2.01000	1095.44000	4	0	523.37360
+Mar 06, 2017 2:22:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	5712	2.08000	1097.52000	6	0	523.81252
+Mar 06, 2017 2:23:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	12471	2.02000	1099.54000	15	0	524.91527
+Mar 06, 2017 2:23:23 AM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	524m55.460s
+user	538m49.628s
+sys	0m33.992s
+Mar 06, 2017 2:23:23 AM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1488185956693
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1488185956693
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 06, 2017 2:23:23 AM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 06, 2017 2:23:24 AM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 06, 2017 2:23:24 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	128.09000
+Mar 06, 2017 2:33:43 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.14000
+Mar 06, 2017 2:37:33 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.36000
+Mar 06, 2017 2:40:15 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.40000
+Mar 06, 2017 2:42:09 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.38000
+Mar 06, 2017 2:43:50 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	162.07000
+Mar 06, 2017 2:45:37 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	181.25000
+Mar 06, 2017 2:47:36 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	39.44000
+Mar 06, 2017 2:49:03 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 06, 2017 2:50:28 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	93.31000
+Mar 06, 2017 2:51:53 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.23000
+Mar 06, 2017 2:52:54 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	40.08000
+Mar 06, 2017 2:54:11 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	10.39000
+Mar 06, 2017 2:55:08 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.42000
+Mar 06, 2017 2:55:49 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.79000
+Mar 06, 2017 2:56:35 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	3.00000
+Mar 06, 2017 2:56:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	644.79000	644.79000	15233	0	33.33288
+Mar 06, 2017 5:17:29 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	11410	35.38000	680.17000	2991	0	174.09800
+Mar 06, 2017 6:01:05 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	9271	18.43000	698.60000	890	0	217.68930
+Mar 06, 2017 6:05:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	474	17.72000	716.32000	88	1	222.22458
+Mar 06, 2017 6:33:19 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	13253	14.13000	730.45000	535	28	249.92143
+Mar 06, 2017 6:35:42 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	2901	13.94000	744.39000	45	1	252.30655
+Mar 06, 2017 7:21:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	638	9.76000	754.15000	851	1	298.52312
+Mar 06, 2017 7:46:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	4824	8.08000	762.23000	450	2	323.19172
+Mar 06, 2017 8:06:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	192	7.04000	769.27000	360	4	343.11482
+Mar 06, 2017 8:08:01 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	116	6.99000	776.26000	27	0	344.61852
+Mar 06, 2017 8:14:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	37	6.77000	783.03000	108	1	350.66847
+Mar 06, 2017 8:23:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	66	6.38000	789.41000	172	6	360.38402
+Mar 06, 2017 8:27:15 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	8450	7.78000	797.19000	61	5	363.85915
+Mar 06, 2017 8:30:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	1292	7.60000	804.79000	55	1	367.00307
+Mar 06, 2017 8:47:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	236	5.54000	810.33000	304	19	384.54525
+Mar 06, 2017 8:55:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	3210	5.41000	815.74000	128	4	391.98887
+Mar 06, 2017 8:59:18 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	1827	5.83000	821.57000	67	2	395.90258
+Mar 06, 2017 9:36:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	682	5.88000	827.45000	633	34	433.01215
+Mar 06, 2017 9:37:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	307	5.81000	833.26000	18	1	434.07107
+Mar 06, 2017 9:37:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	2086	4.70000	837.96000	3	0	434.24967
+Mar 06, 2017 10:00:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	1987	4.14000	842.10000	379	25	456.84325
+Mar 06, 2017 10:00:39 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	989	5.35000	847.45000	7	0	457.26045
+Mar 06, 2017 10:01:05 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	7417	4.87000	852.32000	7	0	457.68245
+Mar 06, 2017 10:04:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	639	4.59000	856.91000	49	5	460.64503
+Mar 06, 2017 10:09:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	41	3.75000	860.66000	90	5	466.10450
+Mar 06, 2017 10:09:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	9772	4.74000	865.40000	7	0	466.53230
+Mar 06, 2017 10:10:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	3029	3.84000	869.24000	14	4	467.38788
+Mar 06, 2017 10:22:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	151	4.16000	873.40000	195	25	479.34778
+Mar 06, 2017 10:22:48 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	572	4.32000	877.72000	1	0	479.40965
+Mar 06, 2017 10:22:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	586	4.19000	881.91000	1	1	479.47200
+Mar 06, 2017 10:25:21 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	1690	4.12000	886.03000	40	5	481.95935
+Mar 06, 2017 10:25:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	1521	3.63000	889.66000	3	0	482.14580
+Mar 06, 2017 10:25:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	4878	3.79000	893.45000	1	0	482.20858
+Mar 06, 2017 10:26:59 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	145	3.55000	897.00000	22	3	483.58615
+Mar 06, 2017 10:27:06 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	2080	4.80000	901.80000	2	1	483.71282
+Mar 06, 2017 10:30:12 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	1102	3.42000	905.22000	49	5	486.80115
+Mar 06, 2017 10:31:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	3399	4.25000	909.47000	18	1	487.93820
+Mar 06, 2017 10:42:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	7295	3.36000	912.83000	176	23	499.15733
+Mar 06, 2017 10:43:15 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	6072	4.65000	917.48000	11	1	499.86325
+Mar 06, 2017 10:43:19 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	340	3.69000	921.17000	1	0	499.92788
+Mar 06, 2017 10:45:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	92	3.85000	925.02000	32	4	501.99343
+Mar 06, 2017 10:45:27 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	754	3.49000	928.51000	1	0	502.05803
+Mar 06, 2017 10:45:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	210	3.44000	931.95000	4	3	502.31752
+Mar 06, 2017 10:45:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	863	3.32000	935.27000	1	0	502.38263
+Mar 06, 2017 10:46:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	150	4.01000	939.28000	11	2	503.10082
+Mar 06, 2017 10:47:13 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	741	3.89000	943.17000	11	2	503.82163
+Mar 06, 2017 10:47:41 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	858	3.19000	946.36000	7	3	504.28293
+Mar 06, 2017 10:48:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	2704	3.47000	949.83000	12	3	505.07440
+Mar 06, 2017 10:50:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	507	3.93000	953.76000	35	7	507.38455
+Mar 06, 2017 10:53:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	11643	3.09000	956.85000	43	9	510.23715
+Mar 06, 2017 11:01:31 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	367	2.99000	959.84000	119	15	518.12927
+Mar 06, 2017 11:07:03 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	5629	4.10000	963.94000	83	10	523.64970
+Mar 06, 2017 11:11:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	5000	2.91000	966.85000	68	5	528.18822
+Mar 06, 2017 11:12:15 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	4944	2.89000	969.74000	10	0	528.85820
+Mar 06, 2017 11:12:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	3247	3.27000	973.01000	10	1	529.53128
+Mar 06, 2017 11:13:08 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	8400	3.13000	976.14000	3	0	529.73372
+Mar 06, 2017 11:13:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	1946	3.16000	979.30000	5	0	530.07178
+Mar 06, 2017 11:14:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	6271	3.00000	982.30000	9	0	530.68217
+Mar 06, 2017 11:15:30 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	5140	2.96000	985.26000	21	5	532.10437
+Mar 06, 2017 11:17:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1610	4.00000	989.26000	26	3	533.86928
+Mar 06, 2017 11:36:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	1617	2.66000	991.92000	276	33	552.63613
+Mar 06, 2017 11:36:10 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	3283	2.97000	994.89000	2	1	552.77272
+Mar 06, 2017 11:36:14 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	3675	2.68000	997.57000	1	0	552.84108
+Mar 06, 2017 11:37:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	1851	3.18000	1000.75000	16	2	553.93610
+Mar 06, 2017 11:38:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	4419	3.23000	1003.98000	19	8	555.23898
+Mar 06, 2017 11:39:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	5813	2.84000	1006.82000	15	1	556.27423
+Mar 06, 2017 11:40:13 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	2841	2.62000	1009.44000	8	3	556.82693
+Mar 06, 2017 11:44:09 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	12882	2.61000	1012.05000	57	5	560.76408
+Mar 06, 2017 11:45:28 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	6744	2.71000	1014.76000	19	3	562.07815
+Mar 06, 2017 11:46:35 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	6387	2.92000	1017.68000	16	1	563.18580
+Mar 06, 2017 11:47:29 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	2626	2.78000	1020.46000	13	4	564.08907
+Mar 06, 2017 11:47:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	2786	3.25000	1023.71000	1	0	564.15887
+Mar 06, 2017 11:48:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	9684	2.67000	1026.38000	12	1	564.99645
+Mar 06, 2017 11:50:09 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	3286	2.61000	1028.99000	25	5	566.74885
+Mar 06, 2017 11:56:15 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	1912	2.77000	1031.76000	87	11	572.85363
+Mar 06, 2017 11:59:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	1740	2.55000	1034.31000	51	15	576.43645
+Mar 06, 2017 12:00:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	10519	2.66000	1036.97000	3	0	576.64633
+Mar 06, 2017 12:00:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	4141	2.69000	1039.66000	13	2	577.56292
+Mar 06, 2017 12:03:05 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	4302	3.07000	1042.73000	30	3	579.68350
+Mar 06, 2017 12:04:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	9908	2.70000	1045.43000	18	0	580.96047
+Mar 06, 2017 12:05:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	1520	2.63000	1048.06000	12	0	581.81078
+Mar 06, 2017 12:05:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	3618	2.48000	1050.54000	2	0	581.95342
+Mar 06, 2017 12:05:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	651	2.75000	1053.29000	2	3	582.09658
+Mar 06, 2017 12:05:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	1658	2.72000	1056.01000	1	0	582.16840
+Mar 06, 2017 12:06:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	9157	2.71000	1058.72000	13	1	583.09948
+Mar 06, 2017 12:08:13 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	597	3.64000	1062.36000	24	2	584.82542
+Mar 06, 2017 12:08:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	322	3.17000	1065.53000	5	2	585.18695
+Mar 06, 2017 12:09:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	1426	2.66000	1068.19000	8	1	585.76673
+Mar 06, 2017 12:09:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	1327	2.42000	1070.61000	10	0	586.49103
+Mar 06, 2017 12:09:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	1633	2.44000	1073.05000	1	1	586.56390
+Mar 06, 2017 12:10:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	4030	2.46000	1075.51000	2	1	586.70933
+Mar 06, 2017 12:10:28 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	3131	2.40000	1077.91000	5	2	587.07090
+Mar 06, 2017 12:10:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	437	2.48000	1080.39000	4	0	587.35977
+Mar 06, 2017 12:17:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	4203	2.56000	1082.95000	86	12	593.61340
+Mar 06, 2017 12:20:39 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	721	2.34000	1085.29000	50	4	597.25557
+Mar 06, 2017 12:20:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	2573	2.69000	1087.98000	3	0	597.47452
+Mar 06, 2017 12:21:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	14924	2.87000	1090.85000	12	1	598.35260
+Mar 06, 2017 12:23:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	1320	2.31000	1093.16000	19	6	599.74575
+Mar 06, 2017 12:26:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	2133	2.61000	1095.77000	41	4	602.76333
+Mar 06, 2017 12:26:18 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	3696	2.85000	1098.62000	2	0	602.91025
+Mar 06, 2017 12:26:18 PM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	602m55.375s
+user	619m11.292s
+sys	0m39.520s
+Mar 06, 2017 12:26:18 PM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1488202599964
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1488202599964
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 06, 2017 12:26:18 PM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 06, 2017 12:26:19 PM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 06, 2017 12:26:19 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	130.76000
+Mar 06, 2017 12:36:37 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.14000
+Mar 06, 2017 12:40:28 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.36000
+Mar 06, 2017 12:43:09 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.42000
+Mar 06, 2017 12:45:03 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.37000
+Mar 06, 2017 12:46:43 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	163.70000
+Mar 06, 2017 12:48:31 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	188.33000
+Mar 06, 2017 12:50:30 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	43.32000
+Mar 06, 2017 12:51:57 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.21000
+Mar 06, 2017 12:53:21 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	92.76000
+Mar 06, 2017 12:54:46 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.22000
+Mar 06, 2017 12:55:47 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	43.15000
+Mar 06, 2017 12:57:04 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	11.11000
+Mar 06, 2017 12:58:01 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.52000
+Mar 06, 2017 12:58:42 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.81000
+Mar 06, 2017 12:59:27 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	3.44000
+Mar 06, 2017 12:59:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	644.80000	644.80000	15233	0	33.29527
+Mar 06, 2017 3:18:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	8899	34.33000	679.13000	2965	0	172.56707
+Mar 06, 2017 4:02:16 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	9278	18.83000	697.96000	886	0	215.95120
+Mar 06, 2017 4:04:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	624	18.40000	716.36000	40	0	218.00627
+Mar 06, 2017 4:36:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	3138	14.10000	730.46000	609	0	249.78810
+Mar 06, 2017 4:40:59 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	13264	14.64000	745.10000	91	1	254.66927
+Mar 06, 2017 5:39:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	2075	8.54000	753.64000	1094	12	313.63240
+Mar 06, 2017 5:59:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	4824	7.50000	761.14000	361	2	333.36388
+Mar 06, 2017 6:06:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	639	8.97000	770.11000	131	0	340.56592
+Mar 06, 2017 6:08:59 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	66	7.76000	777.87000	38	0	342.67742
+Mar 06, 2017 6:12:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	682	8.10000	785.97000	69	0	346.54278
+Mar 06, 2017 6:31:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	1292	6.14000	792.11000	333	3	365.37657
+Mar 06, 2017 6:34:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	4519	6.39000	798.50000	44	0	367.88002
+Mar 06, 2017 6:43:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	412	6.30000	804.80000	155	0	376.76033
+Mar 06, 2017 6:53:28 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	571	5.40000	810.20000	180	6	387.15353
+Mar 06, 2017 7:17:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	563	4.78000	814.98000	419	6	411.46688
+Mar 06, 2017 7:18:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	349	5.66000	820.64000	12	1	412.16878
+Mar 06, 2017 7:19:22 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	442	6.05000	826.69000	15	0	413.04950
+Mar 06, 2017 7:40:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	1827	4.88000	831.57000	356	8	434.04535
+Mar 06, 2017 7:41:22 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	1221	4.60000	836.17000	17	0	435.05275
+Mar 06, 2017 7:43:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	989	4.82000	840.99000	30	1	436.83108
+Mar 06, 2017 7:44:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	11980	4.19000	845.18000	16	1	437.78892
+Mar 06, 2017 7:55:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	37	4.56000	849.74000	190	3	449.19715
+Mar 06, 2017 7:59:40 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	227	4.31000	854.05000	69	1	453.35433
+Mar 06, 2017 8:03:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	8450	3.88000	857.93000	70	0	457.59655
+Mar 06, 2017 8:04:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	883	3.93000	861.86000	10	0	458.20035
+Mar 06, 2017 8:05:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	307	4.01000	865.87000	10	0	458.80778
+Mar 06, 2017 8:06:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	2141	5.46000	871.33000	16	0	459.78870
+Mar 06, 2017 8:12:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	111	3.69000	875.02000	110	3	466.55507
+Mar 06, 2017 8:18:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	367	3.84000	878.86000	98	3	472.61635
+Mar 06, 2017 8:21:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	242	4.82000	883.68000	36	1	474.85208
+Mar 06, 2017 8:21:17 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	6477	4.65000	888.33000	2	1	474.97690
+Mar 06, 2017 8:23:40 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	3683	4.12000	892.45000	38	0	477.35807
+Mar 06, 2017 8:24:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	7417	3.60000	896.05000	18	3	478.49162
+Mar 06, 2017 8:27:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	1987	4.13000	900.18000	45	2	481.31853
+Mar 06, 2017 8:34:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	4469	3.35000	903.53000	116	2	488.64000
+Mar 06, 2017 8:37:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	1153	3.62000	907.15000	40	2	491.17312
+Mar 06, 2017 8:39:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	9772	3.44000	910.59000	24	3	492.70015
+Mar 06, 2017 8:39:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	1423	4.83000	915.42000	12	1	493.46475
+Mar 06, 2017 8:41:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	6836	3.82000	919.24000	24	1	495.00283
+Mar 06, 2017 9:03:05 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	1724	3.64000	922.88000	340	20	516.77238
+Mar 06, 2017 9:05:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	511	3.03000	925.91000	38	2	519.22435
+Mar 06, 2017 9:06:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	4944	3.02000	928.93000	11	0	519.93483
+Mar 06, 2017 9:10:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	2653	2.97000	931.90000	72	1	524.59453
+Mar 06, 2017 9:11:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	23	3.70000	935.60000	12	3	525.37243
+Mar 06, 2017 9:11:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	839	3.94000	939.54000	4	0	525.63300
+Mar 06, 2017 9:12:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	5033	3.14000	942.68000	3	2	525.82943
+Mar 06, 2017 9:13:19 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	7992	3.02000	945.70000	18	0	527.00935
+Mar 06, 2017 9:17:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	1103	4.33000	950.03000	63	3	531.12372
+Mar 06, 2017 9:23:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	4266	3.15000	953.18000	95	5	537.37495
+Mar 06, 2017 9:27:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	3978	3.10000	956.28000	57	3	541.13778
+Mar 06, 2017 9:28:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	1339	2.91000	959.19000	19	1	542.39918
+Mar 06, 2017 9:31:50 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	1186	3.02000	962.21000	47	1	545.52335
+Mar 06, 2017 9:32:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	6072	2.84000	965.05000	3	0	545.72305
+Mar 06, 2017 9:34:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	1429	2.89000	967.94000	33	1	547.92795
+Mar 06, 2017 9:34:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	6754	3.21000	971.15000	4	0	548.19568
+Mar 06, 2017 9:35:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	128	2.89000	974.04000	11	0	548.93462
+Mar 06, 2017 9:35:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	754	3.16000	977.20000	2	0	549.06892
+Mar 06, 2017 9:35:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	5813	3.89000	981.09000	3	0	549.27120
+Mar 06, 2017 9:35:39 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1758	3.70000	984.79000	1	0	549.33870
+Mar 06, 2017 9:37:28 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	632	3.59000	988.38000	27	1	551.15668
+Mar 06, 2017 9:38:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	945	2.74000	991.12000	17	2	552.31583
+Mar 06, 2017 9:40:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	122	2.81000	993.93000	30	3	554.36437
+Mar 06, 2017 9:40:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	403	3.92000	997.85000	3	0	554.56990
+Mar 06, 2017 9:42:11 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	4422	2.75000	1000.60000	19	2	555.87525
+Mar 06, 2017 9:44:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	336	2.66000	1003.26000	33	1	558.14195
+Mar 06, 2017 9:44:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	3462	3.07000	1006.33000	5	0	558.48717
+Mar 06, 2017 9:44:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	5607	3.26000	1009.59000	2	0	558.62530
+Mar 06, 2017 9:45:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	834	3.17000	1012.76000	14	0	559.58722
+Mar 06, 2017 9:48:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	1690	2.58000	1015.34000	36	2	562.07843
+Mar 06, 2017 9:49:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	12469	2.85000	1018.19000	22	0	563.60040
+Mar 06, 2017 9:55:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	969	2.88000	1021.07000	84	6	569.44235
+Mar 06, 2017 10:03:42 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	90	2.83000	1023.90000	114	12	577.38212
+Mar 06, 2017 10:06:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	13085	2.61000	1026.51000	46	3	580.59328
+Mar 06, 2017 10:09:42 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	1515	2.96000	1029.47000	40	3	583.39573
+Mar 06, 2017 10:13:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	1599	3.00000	1032.47000	48	4	586.75307
+Mar 06, 2017 10:13:25 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	908	2.94000	1035.41000	5	1	587.10253
+Mar 06, 2017 10:17:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	3212	3.03000	1038.44000	53	5	590.83312
+Mar 06, 2017 10:26:49 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	4545	2.59000	1041.03000	137	7	600.50523
+Mar 06, 2017 10:26:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	5461	2.91000	1043.94000	1	0	600.57627
+Mar 06, 2017 10:27:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	60	2.48000	1046.42000	15	0	601.63848
+Mar 06, 2017 10:28:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	6797	2.49000	1048.91000	8	1	602.20802
+Mar 06, 2017 10:31:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	151	2.31000	1051.22000	43	1	605.25620
+Mar 06, 2017 10:31:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	582	2.74000	1053.96000	2	1	605.39838
+Mar 06, 2017 10:31:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	1842	2.75000	1056.71000	1	0	605.47020
+Mar 06, 2017 10:38:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	1980	2.32000	1059.03000	90	7	611.91892
+Mar 06, 2017 10:38:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	4495	2.81000	1061.84000	9	1	612.56378
+Mar 06, 2017 10:50:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	5020	2.62000	1064.46000	155	9	623.69545
+Mar 06, 2017 10:50:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	3455	2.23000	1066.69000	2	0	623.83937
+Mar 06, 2017 10:50:22 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	8690	2.49000	1069.18000	3	0	624.05423
+Mar 06, 2017 10:51:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	680	2.29000	1071.47000	19	2	625.42872
+Mar 06, 2017 10:54:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	75	2.58000	1074.05000	44	0	628.61012
+Mar 06, 2017 10:56:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	2237	2.28000	1076.33000	26	2	630.48905
+Mar 06, 2017 10:56:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	3359	2.39000	1078.72000	2	0	630.63347
+Mar 06, 2017 10:57:10 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	7756	2.47000	1081.19000	3	1	630.84988
+Mar 06, 2017 10:57:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	4878	2.28000	1083.47000	4	0	631.14205
+Mar 06, 2017 10:57:45 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	2324	2.33000	1085.80000	4	0	631.43388
+Mar 06, 2017 10:58:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	1891	2.51000	1088.31000	13	0	632.37988
+Mar 06, 2017 10:58:46 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	4284	2.19000	1090.50000	1	0	632.45335
+Mar 06, 2017 11:01:24 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	2506	2.72000	1093.22000	36	6	635.08987
+Mar 06, 2017 11:01:24 PM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	635m5.902s
+user	652m37.716s
+sys	0m41.484s
+Mar 06, 2017 11:01:24 PM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1488255084020
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1488255084020
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 06, 2017 11:01:24 PM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 06, 2017 11:01:25 PM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 06, 2017 11:01:25 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	130.18000
+Mar 06, 2017 11:11:47 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.14000
+Mar 06, 2017 11:15:39 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.36000
+Mar 06, 2017 11:18:21 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.41000
+Mar 06, 2017 11:20:17 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.37000
+Mar 06, 2017 11:21:58 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	156.20000
+Mar 06, 2017 11:23:47 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	184.14000
+Mar 06, 2017 11:25:47 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	42.74000
+Mar 06, 2017 11:27:13 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 06, 2017 11:28:39 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	91.40000
+Mar 06, 2017 11:30:04 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.22000
+Mar 06, 2017 11:31:04 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	38.06000
+Mar 06, 2017 11:32:21 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	10.02000
+Mar 06, 2017 11:33:18 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.57000
+Mar 06, 2017 11:34:00 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.79000
+Mar 06, 2017 11:34:45 PM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	2.93000
+Mar 06, 2017 11:34:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	645.39000	645.39000	15233	0	33.49795
+Mar 07, 2017 1:55:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	9994	33.76000	679.15000	2971	0	173.65137
+Mar 07, 2017 2:36:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	27	18.99000	698.14000	841	0	214.86453
+Mar 07, 2017 2:40:22 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	9281	18.32000	716.46000	80	0	218.95437
+Mar 07, 2017 3:11:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	13265	14.25000	730.71000	595	7	250.14590
+Mar 07, 2017 3:20:01 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	7863	13.15000	743.86000	157	0	258.60488
+Mar 07, 2017 4:11:05 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	639	8.57000	752.43000	940	8	309.66962
+Mar 07, 2017 4:11:44 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	1292	8.67000	761.10000	12	1	310.32618
+Mar 07, 2017 4:22:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	8450	8.29000	769.39000	202	0	321.50727
+Mar 07, 2017 4:30:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	192	10.20000	779.59000	134	1	328.99053
+Mar 07, 2017 4:40:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	66	6.96000	786.55000	177	1	338.97173
+Mar 07, 2017 4:40:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	4824	7.79000	794.34000	7	1	339.36672
+Mar 07, 2017 4:56:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	682	6.34000	800.68000	266	1	354.65885
+Mar 07, 2017 5:04:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	885	6.56000	807.24000	143	2	362.92582
+Mar 07, 2017 5:13:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	412	5.70000	812.94000	158	2	372.12177
+Mar 07, 2017 5:19:10 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	1731	5.53000	818.47000	96	2	377.74958
+Mar 07, 2017 6:00:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	37	4.82000	823.29000	696	6	418.62337
+Mar 07, 2017 6:01:59 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	1943	4.70000	827.99000	33	1	420.57378
+Mar 07, 2017 6:02:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	41	4.44000	832.43000	5	0	420.87015
+Mar 07, 2017 6:05:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	3247	4.50000	836.93000	52	0	423.96967
+Mar 07, 2017 6:08:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	721	4.35000	841.28000	45	0	426.66138
+Mar 07, 2017 6:12:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	1103	4.59000	845.87000	76	3	431.22555
+Mar 07, 2017 6:30:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	150	4.06000	849.93000	288	5	448.61783
+Mar 07, 2017 6:34:09 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	5000	4.80000	854.73000	68	0	452.73505
+Mar 07, 2017 6:35:07 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	111	4.36000	859.09000	16	0	453.71070
+Mar 07, 2017 6:37:12 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	241	4.52000	863.61000	34	0	455.79007
+Mar 07, 2017 6:44:12 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	1449	4.04000	867.65000	114	3	462.78500
+Mar 07, 2017 6:53:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	1599	3.53000	871.18000	156	3	472.41140
+Mar 07, 2017 6:54:19 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	224	4.19000	875.37000	8	0	472.90468
+Mar 07, 2017 6:54:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	572	3.56000	878.93000	5	0	473.21250
+Mar 07, 2017 6:55:11 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	396	4.03000	882.96000	9	0	473.77278
+Mar 07, 2017 6:55:15 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	535	4.47000	887.43000	1	0	473.83593
+Mar 07, 2017 6:55:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	145	5.23000	892.66000	6	0	474.21112
+Mar 07, 2017 7:04:31 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	63	3.66000	896.32000	141	3	483.10777
+Mar 07, 2017 7:08:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	3029	4.47000	900.79000	65	5	487.22097
+Mar 07, 2017 7:12:07 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	7862	3.61000	904.40000	55	2	490.70843
+Mar 07, 2017 7:13:23 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	1987	3.32000	907.72000	20	1	491.97912
+Mar 07, 2017 7:13:31 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	3462	5.03000	912.75000	2	0	492.10720
+Mar 07, 2017 7:14:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	409	4.76000	917.51000	8	0	492.62137
+Mar 07, 2017 7:24:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	1827	3.14000	920.65000	163	6	503.12170
+Mar 07, 2017 7:24:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	7841	3.80000	924.45000	2	0	503.25165
+Mar 07, 2017 7:27:00 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	11342	3.62000	928.07000	36	4	505.59048
+Mar 07, 2017 7:34:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	1521	3.77000	931.84000	121	6	513.45838
+Mar 07, 2017 7:44:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	6765	3.27000	935.11000	154	7	523.52735
+Mar 07, 2017 8:06:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	6072	2.88000	937.99000	329	22	545.02117
+Mar 07, 2017 8:06:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	12247	3.17000	941.16000	2	0	545.15277
+Mar 07, 2017 8:07:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	3128	2.81000	943.97000	19	3	546.40480
+Mar 07, 2017 8:08:01 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	52	2.86000	946.83000	3	0	546.60277
+Mar 07, 2017 8:09:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	3847	3.37000	950.20000	28	5	548.45560
+Mar 07, 2017 8:10:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	5683	2.77000	952.97000	7	0	548.91807
+Mar 07, 2017 8:13:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	2463	3.18000	956.15000	53	4	552.43148
+Mar 07, 2017 8:15:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	1238	3.44000	959.59000	18	3	553.63063
+Mar 07, 2017 8:15:06 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	1495	3.62000	963.21000	1	0	553.69778
+Mar 07, 2017 8:16:02 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	2462	2.78000	965.99000	14	2	554.63130
+Mar 07, 2017 8:17:07 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	1855	2.79000	968.78000	16	0	555.70480
+Mar 07, 2017 8:19:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	582	2.74000	971.52000	37	2	558.18793
+Mar 07, 2017 8:19:40 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	862	3.41000	974.93000	1	0	558.25548
+Mar 07, 2017 8:21:41 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	930	2.98000	977.91000	30	0	560.27982
+Mar 07, 2017 9:16:24 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	4151	2.26000	980.17000	812	58	614.99553
+Mar 07, 2017 9:17:21 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1690	2.60000	982.77000	14	0	615.94113
+Mar 07, 2017 9:17:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	3791	2.45000	985.22000	4	0	616.21423
+Mar 07, 2017 9:17:54 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	6481	2.50000	987.72000	4	0	616.48640
+Mar 07, 2017 9:18:06 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	7492	2.91000	990.63000	3	0	616.69088
+Mar 07, 2017 9:18:55 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	1186	2.30000	992.93000	12	0	617.50968
+Mar 07, 2017 9:20:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	861	3.58000	996.51000	20	2	618.87432
+Mar 07, 2017 9:29:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	1153	2.98000	999.49000	135	3	628.11663
+Mar 07, 2017 9:29:36 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	6836	2.19000	1001.68000	1	0	628.18477
+Mar 07, 2017 9:30:17 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	12991	2.37000	1004.05000	10	0	628.87035
+Mar 07, 2017 9:30:33 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	3840	2.22000	1006.27000	4	0	629.14650
+Mar 07, 2017 9:32:25 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	2498	2.55000	1008.82000	27	1	631.00863
+Mar 07, 2017 9:32:38 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	6573	2.30000	1011.12000	3	1	631.21653
+Mar 07, 2017 9:33:19 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	4499	2.53000	1013.65000	10	0	631.90860
+Mar 07, 2017 9:33:32 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	10684	2.84000	1016.49000	3	0	632.11755
+Mar 07, 2017 9:34:01 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	1520	3.31000	1019.80000	7	0	632.60568
+Mar 07, 2017 9:34:34 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	6133	2.26000	1022.06000	8	1	633.16377
+Mar 07, 2017 9:35:45 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	700	2.27000	1024.33000	17	3	634.34883
+Mar 07, 2017 9:37:26 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	4030	2.43000	1026.76000	24	3	636.02037
+Mar 07, 2017 9:37:47 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	9634	3.11000	1029.87000	5	0	636.36832
+Mar 07, 2017 9:37:51 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	12498	2.70000	1032.57000	1	0	636.43793
+Mar 07, 2017 9:39:06 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	124	2.59000	1035.16000	18	0	637.69883
+Mar 07, 2017 9:41:56 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	349	3.22000	1038.38000	40	5	640.51882
+Mar 07, 2017 9:42:21 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	2056	2.74000	1041.12000	6	2	640.94378
+Mar 07, 2017 9:42:25 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	3488	3.16000	1044.28000	1	0	641.01472
+Mar 07, 2017 9:43:42 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	2879	2.98000	1047.26000	18	0	642.29430
+Mar 07, 2017 9:44:04 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	2924	2.14000	1049.40000	5	0	642.65183
+Mar 07, 2017 9:44:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	4655	2.14000	1051.54000	3	0	642.86437
+Mar 07, 2017 9:46:16 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	13342	2.43000	1053.97000	28	2	644.86318
+Mar 07, 2017 9:53:25 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	1159	2.60000	1056.57000	100	11	652.01218
+Mar 07, 2017 9:53:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	6142	2.52000	1059.09000	4	1	652.29982
+Mar 07, 2017 9:54:08 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	2298	2.12000	1061.21000	6	0	652.73158
+Mar 07, 2017 9:54:43 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	11395	2.73000	1063.94000	8	0	653.30727
+Mar 07, 2017 9:57:01 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	1312	2.30000	1066.24000	32	0	655.60787
+Mar 07, 2017 9:57:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	6343	2.55000	1068.79000	11	0	656.40273
+Mar 07, 2017 9:58:49 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	1166	2.92000	1071.71000	14	1	657.41317
+Mar 07, 2017 10:02:52 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	442	2.22000	1073.93000	56	2	661.45345
+Mar 07, 2017 10:05:11 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	1038	3.04000	1076.97000	32	1	663.77203
+Mar 07, 2017 10:05:20 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	1764	2.53000	1079.50000	2	1	663.91643
+Mar 07, 2017 10:05:50 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	7417	2.77000	1082.27000	7	1	664.42263
+Mar 07, 2017 10:05:59 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	10559	2.01000	1084.28000	2	2	664.56790
+Mar 07, 2017 10:06:12 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	344	2.65000	1086.93000	3	0	664.78748
+Mar 07, 2017 10:06:12 AM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	664m47.713s
+user	682m49.120s
+sys	0m42.680s
+Mar 07, 2017 10:06:12 AM ca.ubc.InfluenceMaximization main
+INFO: Command line arguments: ./properties/config_celfpp_10K_200.properties ./graph/hep_IC_0.1.inf ./outputs_amit 1488314347675
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Config print
+INFO: Graph file path: ./graph/hep_IC_0.1.inf
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Config print
+INFO: Output location: ./outputs_amit
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Config print
+INFO: Algorithm choice: celfplus
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Config print
+INFO: Number of MC runs: 10000
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Config print
+INFO: Number of seeds: 100
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Config print
+INFO: Propagation model: IC
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Config print
+INFO: Random number generator's seed: 1488314347675
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Graph <init>
+INFO: Reading graph file from ./graph/hep_IC_0.1.inf
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Graph <init>
+INFO: Number of nodes = 15233
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Graph <init>
+INFO: Number of edges = 62796
+Mar 07, 2017 10:06:12 AM ca.ubc.util.Graph <init>
+INFO: Finished reading graph file!
+Mar 07, 2017 10:06:12 AM ca.ubc.InfluenceMaximization run
+INFO: Running CELF++
+Mar 07, 2017 10:06:13 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 0	127.46000
+Mar 07, 2017 10:16:33 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 1000	1.13000
+Mar 07, 2017 10:20:24 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 2000	1.36000
+Mar 07, 2017 10:23:04 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 3000	1.45000
+Mar 07, 2017 10:24:59 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 4000	1.39000
+Mar 07, 2017 10:26:41 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 5000	162.24000
+Mar 07, 2017 10:28:29 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 6000	184.43000
+Mar 07, 2017 10:30:29 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 7000	42.84000
+Mar 07, 2017 10:31:56 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 8000	1.20000
+Mar 07, 2017 10:33:21 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 9000	94.62000
+Mar 07, 2017 10:34:46 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 10000	1.22000
+Mar 07, 2017 10:35:46 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 11000	40.60000
+Mar 07, 2017 10:37:04 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 12000	10.29000
+Mar 07, 2017 10:38:01 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 13000	3.60000
+Mar 07, 2017 10:38:42 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 14000	1.86000
+Mar 07, 2017 10:39:28 AM ca.ubc.algo.CelfPlusAlgo run
+INFO: 15000	2.92000
+Mar 07, 2017 10:39:37 AM ca.ubc.util.InfMaxUtils logSeed
+INFO: 1	100	643.65000	643.65000	15233	0	33.41042
+Mar 07, 2017 1:00:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 2	11407	33.26000	676.91000	2975	0	173.81813
+Mar 07, 2017 1:35:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 3	239	20.82000	697.73000	713	0	208.85252
+Mar 07, 2017 1:45:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 4	9261	18.64000	716.37000	215	0	219.74092
+Mar 07, 2017 2:21:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 5	7848	14.10000	730.47000	670	0	254.80865
+Mar 07, 2017 2:31:58 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 6	13254	13.02000	743.49000	204	0	265.76092
+Mar 07, 2017 3:35:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 7	307	8.39000	751.88000	1178	0	329.70620
+Mar 07, 2017 3:43:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 8	559	8.79000	760.67000	139	0	337.31513
+Mar 07, 2017 4:07:20 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 9	8450	7.04000	767.71000	431	4	361.13685
+Mar 07, 2017 4:10:25 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 10	192	9.11000	776.82000	55	0	364.21428
+Mar 07, 2017 4:26:58 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 11	638	7.61000	784.43000	295	8	380.77070
+Mar 07, 2017 4:34:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 12	4824	7.05000	791.48000	138	6	388.59698
+Mar 07, 2017 4:56:24 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 13	682	7.14000	798.62000	378	15	410.19330
+Mar 07, 2017 5:04:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 14	989	6.55000	805.17000	148	14	418.68877
+Mar 07, 2017 5:11:08 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 15	66	5.69000	810.86000	108	10	424.93390
+Mar 07, 2017 5:11:12 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 16	1188	5.80000	816.66000	1	0	424.99178
+Mar 07, 2017 5:17:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 17	41	5.23000	821.89000	109	7	431.37472
+Mar 07, 2017 5:21:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 18	1987	5.22000	827.11000	74	3	435.72307
+Mar 07, 2017 5:22:06 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 19	861	5.38000	832.49000	3	0	435.90050
+Mar 07, 2017 5:38:15 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 20	850	5.15000	837.64000	272	24	452.04770
+Mar 07, 2017 5:45:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 21	37	4.59000	842.23000	121	13	459.27690
+Mar 07, 2017 5:45:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 22	649	5.78000	848.01000	1	0	459.33722
+Mar 07, 2017 5:46:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 23	412	5.98000	853.99000	23	1	460.72517
+Mar 07, 2017 5:49:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 24	523	4.97000	858.96000	40	4	463.15307
+Mar 07, 2017 6:00:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 25	2077	4.40000	863.36000	175	20	473.82857
+Mar 07, 2017 6:14:33 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 26	985	4.68000	868.04000	237	37	488.34818
+Mar 07, 2017 6:19:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 27	563	4.46000	872.50000	82	8	493.39582
+Mar 07, 2017 6:33:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 28	1599	4.07000	876.57000	217	38	506.82335
+Mar 07, 2017 6:53:40 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 29	1202	3.51000	880.08000	333	57	527.46442
+Mar 07, 2017 6:59:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 30	2153	3.90000	883.98000	92	13	533.18617
+Mar 07, 2017 7:00:42 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 31	1159	4.56000	888.54000	21	9	534.49488
+Mar 07, 2017 7:02:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 32	2133	3.54000	892.08000	29	5	536.30962
+Mar 07, 2017 7:05:36 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 33	3779	3.43000	895.51000	49	9	539.39157
+Mar 07, 2017 7:07:14 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 34	1312	3.70000	899.21000	26	1	541.03207
+Mar 07, 2017 7:08:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 35	218	3.87000	903.08000	12	0	541.79347
+Mar 07, 2017 7:10:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 36	4228	3.68000	906.76000	46	9	544.71338
+Mar 07, 2017 7:12:46 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 37	242	3.62000	910.38000	29	3	546.55653
+Mar 07, 2017 7:13:32 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 38	5000	3.40000	913.78000	12	2	547.32312
+Mar 07, 2017 7:13:55 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 39	741	3.64000	917.42000	6	0	547.70802
+Mar 07, 2017 7:14:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 40	10084	4.60000	922.02000	2	0	547.83577
+Mar 07, 2017 7:14:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 41	3138	3.98000	926.00000	14	2	548.73678
+Mar 07, 2017 7:17:43 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 42	3247	3.27000	929.27000	43	2	551.52047
+Mar 07, 2017 7:21:42 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 43	322	3.73000	933.00000	61	7	555.49112
+Mar 07, 2017 7:24:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 44	393	3.44000	936.44000	42	9	558.22947
+Mar 07, 2017 7:27:46 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 45	659	3.16000	939.60000	51	7	561.56893
+Mar 07, 2017 7:30:40 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 46	4800	3.57000	943.17000	44	9	564.45588
+Mar 07, 2017 7:30:59 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 47	13619	3.10000	946.27000	5	1	564.78392
+Mar 07, 2017 7:31:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 48	76	5.87000	952.14000	2	0	564.91638
+Mar 07, 2017 7:51:04 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 49	1198	2.80000	954.94000	301	69	584.85445
+Mar 07, 2017 8:22:01 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 50	2462	3.15000	958.09000	466	90	615.80523
+Mar 07, 2017 8:22:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 51	9908	2.85000	960.94000	5	2	616.13920
+Mar 07, 2017 8:22:25 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 52	11230	2.57000	963.51000	1	0	616.20612
+Mar 07, 2017 8:23:17 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 53	754	4.00000	967.51000	13	3	617.07757
+Mar 07, 2017 8:25:18 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 54	1947	2.82000	970.33000	30	7	619.09590
+Mar 07, 2017 8:25:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 55	3696	2.84000	973.17000	2	0	619.23082
+Mar 07, 2017 8:25:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 56	5580	3.09000	976.26000	1	2	619.29842
+Mar 07, 2017 8:27:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 57	1241	3.04000	979.30000	33	2	621.52430
+Mar 07, 2017 8:27:48 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 58	1423	2.56000	981.86000	1	0	621.59243
+Mar 07, 2017 8:28:00 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 59	3677	2.94000	984.80000	3	4	621.79682
+Mar 07, 2017 8:28:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 60	1890	3.46000	988.26000	10	1	622.47805
+Mar 07, 2017 8:31:37 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 61	6477	3.35000	991.61000	43	11	625.41008
+Mar 07, 2017 8:31:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 62	10234	2.66000	994.27000	1	0	625.47845
+Mar 07, 2017 8:34:46 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 63	5263	2.77000	997.04000	45	10	628.55605
+Mar 07, 2017 8:44:30 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 64	2928	3.01000	1000.05000	142	22	638.29657
+Mar 07, 2017 8:53:25 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 65	349	2.42000	1002.47000	130	24	647.20560
+Mar 07, 2017 8:53:41 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 66	3670	2.35000	1004.82000	4	0	647.48063
+Mar 07, 2017 8:54:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 67	8038	2.53000	1007.35000	18	6	648.72645
+Mar 07, 2017 8:56:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 68	4151	2.53000	1009.88000	17	1	649.90692
+Mar 07, 2017 8:56:57 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 69	6605	3.18000	1013.06000	12	1	650.73988
+Mar 07, 2017 8:57:22 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 70	150	2.59000	1015.65000	6	0	651.15835
+Mar 07, 2017 8:57:26 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 71	562	3.17000	1018.82000	1	1	651.22855
+Mar 07, 2017 8:57:34 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 72	6021	2.45000	1021.27000	2	1	651.36865
+Mar 07, 2017 8:58:54 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 73	1449	2.65000	1023.92000	19	1	652.69298
+Mar 07, 2017 8:59:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 74	674	2.61000	1026.53000	8	4	653.25128
+Mar 07, 2017 8:59:53 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 75	9122	2.66000	1029.19000	6	0	653.67362
+Mar 07, 2017 9:05:27 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 76	112	2.44000	1031.63000	79	19	659.23953
+Mar 07, 2017 9:12:33 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 77	245	2.51000	1034.14000	101	19	666.34837
+Mar 07, 2017 9:13:29 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 78	13042	2.27000	1036.41000	13	1	667.27125
+Mar 07, 2017 9:14:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 79	1640	2.63000	1039.04000	8	1	667.83962
+Mar 07, 2017 9:17:31 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 80	1115	2.33000	1041.37000	49	16	671.30555
+Mar 07, 2017 9:17:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 81	8037	2.49000	1043.86000	1	0	671.37703
+Mar 07, 2017 9:17:52 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 82	3135	2.45000	1046.31000	4	0	671.66053
+Mar 07, 2017 9:23:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 83	10684	2.29000	1048.60000	77	12	677.14352
+Mar 07, 2017 9:24:21 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 84	6638	2.27000	1050.87000	14	3	678.13758
+Mar 07, 2017 9:25:46 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 85	2260	2.29000	1053.16000	20	9	679.56415
+Mar 07, 2017 9:30:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 86	545	2.43000	1055.59000	68	14	684.42983
+Mar 07, 2017 9:31:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 87	8921	2.36000	1057.95000	18	6	685.72173
+Mar 07, 2017 9:48:02 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 88	6482	2.06000	1060.01000	225	43	701.83702
+Mar 07, 2017 9:48:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 89	6917	2.48000	1062.49000	1	0	701.90948
+Mar 07, 2017 9:49:07 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 90	227	2.19000	1064.68000	14	2	702.91815
+Mar 07, 2017 9:52:09 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 91	4798	2.08000	1066.76000	42	9	705.94893
+Mar 07, 2017 9:52:44 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 92	4614	2.09000	1068.85000	8	1	706.52348
+Mar 07, 2017 9:57:51 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 93	3967	2.49000	1071.34000	71	12	711.63925
+Mar 07, 2017 10:05:47 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 94	4579	1.92000	1073.26000	110	21	719.58640
+Mar 07, 2017 10:10:03 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 95	13258	2.00000	1075.26000	59	10	723.84985
+Mar 07, 2017 10:14:35 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 96	5033	2.41000	1077.67000	62	9	728.37223
+Mar 07, 2017 10:14:56 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 97	3242	2.09000	1079.76000	5	0	728.73732
+Mar 07, 2017 10:15:23 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 98	6761	1.98000	1081.74000	6	0	729.17478
+Mar 07, 2017 10:17:17 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 99	74	2.14000	1083.88000	26	5	731.07197
+Mar 07, 2017 10:17:38 PM ca.ubc.util.InfMaxUtils logSeed
+INFO: 100	1980	2.29000	1086.17000	5	1	731.43515
+Mar 07, 2017 10:17:38 PM ca.ubc.InfluenceMaximization main
+INFO: Program completed
+
+real	731m26.564s
+user	751m44.820s
+sys	0m47.140s
