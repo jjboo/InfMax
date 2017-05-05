@@ -12,13 +12,18 @@ import java.util.logging.Logger;
  */
 public class Config {
 
+  private static final String STR_CELF = "celf";
+  private static final String STR_CELFPP = "celfpp";
+  private static final String STR_EVAL = "eval";
+
   public enum PropagationModel {
     IC, LT
   }
 
   public enum Algorithm {
-    CELF("celf"),
-    CELFPP("celfplus");
+    CELF(STR_CELF),
+    CELFPP(STR_CELFPP),
+    EVAL(STR_EVAL);
 
     private final String name;
 
@@ -43,6 +48,7 @@ public class Config {
   public int startIter;
   public int rounding = Integer.MAX_VALUE;
   private long randSeed;
+  private String seedFileName;
 
   public Config(String configfile, String graphFile, String outputDir, String randSeedStr) {
     Properties prop = new Properties();
@@ -62,7 +68,12 @@ public class Config {
     this.startIter = Integer.parseInt(prop.getProperty("startIter"));
     this.rounding = Integer.parseInt(prop.getProperty("rounding"));
     setPropagationModel(prop.getProperty("model"));
+    this.seedFileName = prop.getProperty("seedFileName", "seeds.txt");
+
     this.randSeed = Long.parseLong(randSeedStr);
+    if (this.randSeed < 0) {
+      this.randSeed = System.currentTimeMillis();
+    }
 
     if (this.mcRuns <= 0 || this.startIter <= 0) {
       throw new RuntimeException("Values for mcRuns and startIter must be positive");
@@ -78,10 +89,12 @@ public class Config {
    * Set which algorithm to use
    */
   private void setAlgorithm(String algo) {
-    if (algo.toLowerCase().equals("celf")) {
+    if (algo.toLowerCase().equals(STR_CELF)) {
       algorithm = Algorithm.CELF;
-    } else if (algo.toLowerCase().equals("celfpp")) {
+    } else if (algo.toLowerCase().equals(STR_CELFPP)) {
       algorithm = Algorithm.CELFPP;
+    } else if (algo.toLowerCase().equals(STR_EVAL)) {
+      algorithm = Algorithm.EVAL;
     } else {
       throw new RuntimeException("Algorithm not supported. " + algo);
     }
@@ -105,6 +118,13 @@ public class Config {
    */
   public long getRandSeed() {
     return this.randSeed;
+  }
+
+  /**
+   * get seed file name (if applicable)
+   */
+  public String getSeedFileName() {
+    return this.seedFileName;
   }
 
   /**

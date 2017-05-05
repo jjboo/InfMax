@@ -27,6 +27,7 @@ public class Graph {
   public Graph(String graphFilePath) {
     BufferedReader br = null;
     int numEdges = 0;
+    int maxNodeId = Integer.MIN_VALUE;
 
     try  {
       br = new BufferedReader(new FileReader(graphFilePath));
@@ -59,6 +60,11 @@ public class Graph {
           neighbors[u].add(v);
           probs[u].add(p);
           numEdges++;
+
+          if (u > maxNodeId)
+            maxNodeId = u;
+          if (v > maxNodeId)
+            maxNodeId = v;
         }
       }
     } catch (IOException e) {
@@ -77,6 +83,7 @@ public class Graph {
 
     LOGGER.info("Number of edges = " + numEdges);
     LOGGER.info("Finished reading graph file!");
+    LOGGER.info("Max node id = " + maxNodeId);
   }
 
   /**

@@ -2,6 +2,7 @@ package ca.ubc;
 
 import ca.ubc.algo.CelfAlgo;
 import ca.ubc.algo.CelfPlusAlgo;
+import ca.ubc.algo.EvaluateInfluenceSpread;
 import ca.ubc.util.Config;
 import ca.ubc.util.Graph;
 
@@ -59,6 +60,10 @@ public class InfluenceMaximization {
         LOGGER.info("Running CELF++");
         CelfPlusAlgo celfPlusAlgo = new CelfPlusAlgo(graph, config, bw);
         celfPlusAlgo.run();
+      } else if (config.algorithm == Config.Algorithm.EVAL) {
+        LOGGER.info("Evaluating spread only");
+        EvaluateInfluenceSpread eval = new EvaluateInfluenceSpread(graph, config);
+        eval.run();
       } else {
         LOGGER.warning("Invalid algorithm input, program exits");
         System.exit(-1);

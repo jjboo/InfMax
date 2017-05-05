@@ -147,4 +147,61 @@ public class IndependentCascade {
 
     return InfMaxUtils.round(ret / (double) config.mcRuns, config.rounding);
   }
+
+  /**
+   * Compute spread, mean, and std dev of each PW
+   */
+  public double[] spreadStats(Graph graph, Config config, Set<Integer> seeds) {
+
+    double spread = 0;
+    double[] countActive = new double[config.mcRuns];
+    Arrays.fill(countActive, 0.0);
+
+    boolean[] active = new boolean[graph.n];
+    Queue<Integer> bfsQueue = new LinkedList<>();
+
+    for (int i = 0; i < config.mcRuns; ++i) {
+      Arrays.fill(active, false);
+      bfsQueue.clear();
+
+      // activate all seeds
+      for (int s : seeds) {
+        countActive[i]++;
+        active[s] = true;
+        bfsQueue.add(s);
+      }
+
+      countActive[i] += bfs(graph, bfsQueue, active);
+      spread += countActive[i];
+    }
+
+    double[] stats = new double[3]; // expected spread, mean, std dev
+    stats[0] = spread / (double) config.mcRuns;
+    stats[1] = computeMean(countActive);
+    stats[2] = computeStdDev(countActive);
+    return stats;
+  }
+
+  /**
+   * Return mean value
+   */
+  private double computeMean(double[] arr) {
+    double sum = 0.0;
+    for (double d : arr) {
+      sum += d;
+    }
+    return sum / arr.length;
+  }
+
+  /**
+   * Return standard deviation
+   */
+  private double computeStdDev(double[] arr) {
+    double mean = computeMean(arr);
+    double var = 0.0;
+    for (double d : arr) {
+      var += Math.pow((d - mean), 2) / arr.length;
+    }
+    return Math.sqrt(var);
+  }
 }

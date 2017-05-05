@@ -89,15 +89,13 @@ public class CelfPlusAlgo {
         celfPlusSave = 0;
         curBestId = NULL_ID;
         curBestMg = 0;
-
       } else {
+
         CelfPlusNode newNode; // wait to be MG updated and re-heapifying
 
-        // TODO: The IF-condition is never true in iteration 2, as no CELF++ in 1st iteration, can we do sth better here?
         if (bestNode.prevBest == lastSeedId && bestNode.flag == _seedSet.size() - 1) {
           // u.mg2 = u.mg1; skip MG re-computation
           celfPlusSave++;
-          // TODO Check: Should the new mg2 be 0 or be left alone
           newNode = new CelfPlusNode(bestNode.id, bestNode.mg2, 0, _seedSet.size(), NULL_ID);
         } else if (_seedSet.contains(bestNode.prevBest) && bestNode.flag <= _seedSet.size() - 1) {
           celfPlusSave++;
@@ -110,9 +108,11 @@ public class CelfPlusAlgo {
           double mg2 = (curBestId == NULL_ID) ? 0 : (spreads[1] - totalSpread - curBestMg);
           newNode = new CelfPlusNode(bestNode.id, mg1, mg2, _seedSet.size(), curBestId);
         }
+
         // Re-heapify
         _covQueue.poll();
         _covQueue.add(newNode);
+
         // Update current Best. If mg is same, then use the node ids. Smaller node ids are preferred.
         if (newNode.mg > curBestMg || (newNode.mg == curBestMg && newNode.id < curBestId)) {
           curBestId = newNode.id;
